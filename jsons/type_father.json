@@ -1,0 +1,5280 @@
+{
+  "music.release_track": [],
+  "music.recording": [
+    "music.single"
+  ],
+  "music.single": [
+    "music.recording"
+  ],
+  "people.person": [],
+  "book.isbn": [],
+  "book.written_work": [
+    "book.book"
+  ],
+  "book.book": [
+    "book.written_work"
+  ],
+  "media_common.cataloged_instance": [
+    "book.book_edition"
+  ],
+  "location.location": [],
+  "tv.tv_series_episode": [],
+  "music.release": [
+    "media_common.creative_work"
+  ],
+  "media_common.creative_work": [
+    "music.release"
+  ],
+  "book.book_edition": [
+    "media_common.cataloged_instance"
+  ],
+  "music.album": [],
+  "fictional_universe.fictional_character": [
+    "film.film_character"
+  ],
+  "film.film_character": [
+    "fictional_universe.fictional_character"
+  ],
+  "organization.organization": [
+    "business.business_operation"
+  ],
+  "music.artist": [],
+  "people.deceased_person": [
+    "people.person"
+  ],
+  "location.statistical_region": [
+    "location.location",
+    "location.dated_location",
+    "location.citytown"
+  ],
+  "book.author": [
+    "people.person"
+  ],
+  "business.consumer_product": [
+    "music.release",
+    "media_common.creative_work"
+  ],
+  "film.actor": [
+    "people.person"
+  ],
+  "location.dated_location": [
+    "location.location",
+    "location.statistical_region",
+    "location.citytown"
+  ],
+  "music.composition": [],
+  "people.measured_person": [
+    "people.person",
+    "sports.pro_athlete"
+  ],
+  "location.citytown": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.location"
+  ],
+  "business.business_operation": [
+    "organization.organization"
+  ],
+  "sports.pro_athlete": [
+    "people.measured_person",
+    "people.person"
+  ],
+  "business.employer": [
+    "organization.organization"
+  ],
+  "biology.organism_classification": [],
+  "film.film": [],
+  "music.group_member": [
+    "people.person",
+    "music.artist"
+  ],
+  "music.musical_group": [
+    "music.artist"
+  ],
+  "time.event": [],
+  "education.educational_institution": [
+    "business.employer",
+    "organization.organization",
+    "education.school"
+  ],
+  "award.award_nominee": [
+    "people.person"
+  ],
+  "tv.tv_character": [
+    "fictional_universe.fictional_character"
+  ],
+  "architecture.structure": [
+    "location.location",
+    "projects.project_focus",
+    "architecture.building"
+  ],
+  "soccer.football_player": [
+    "people.measured_person",
+    "sports.pro_athlete",
+    "people.person"
+  ],
+  "education.school": [
+    "education.educational_institution",
+    "business.employer",
+    "organization.organization"
+  ],
+  "award.award_winner": [
+    "people.person",
+    "award.award_nominee"
+  ],
+  "biology.gene": [],
+  "biology.gene_group_membership_evidence": [
+    "biology.gene_ontology_group_membership_evidence"
+  ],
+  "award.award_nominated_work": [],
+  "biology.gene_ontology_group_membership_evidence": [
+    "biology.gene_group_membership_evidence"
+  ],
+  "projects.project_focus": [
+    "location.location",
+    "architecture.structure",
+    "architecture.building"
+  ],
+  "government.politician": [
+    "people.person",
+    "people.deceased_person"
+  ],
+  "biology.genomic_locus": [],
+  "film.film_crewmember": [
+    "people.person"
+  ],
+  "location.hud_foreclosure_area": [
+    "location.location",
+    "location.census_tract"
+  ],
+  "film.producer": [
+    "people.person"
+  ],
+  "film.director": [
+    "people.person"
+  ],
+  "geography.geographical_feature": [
+    "location.location",
+    "geography.body_of_water"
+  ],
+  "tv.tv_series_season": [],
+  "tv.tv_program": [],
+  "business.board_member": [
+    "people.person"
+  ],
+  "film.writer": [
+    "people.person",
+    "film.director"
+  ],
+  "dataworld.provenance": [],
+  "business.stock_ticker_symbol": [],
+  "architecture.building": [
+    "location.location",
+    "architecture.structure",
+    "projects.project_focus"
+  ],
+  "dataworld.mass_data_operation": [],
+  "location.postal_code": [
+    "location.location"
+  ],
+  "media_common.netflix_title": [
+    "film.film"
+  ],
+  "music.record_label": [
+    "organization.organization",
+    "business.business_operation"
+  ],
+  "tv.tv_actor": [
+    "people.person",
+    "film.actor"
+  ],
+  "award.award_winning_work": [
+    "award.award_nominated_work"
+  ],
+  "location.census_tract": [
+    "location.location",
+    "location.hud_foreclosure_area"
+  ],
+  "music.composer": [
+    "people.person",
+    "music.artist",
+    "music.writer",
+    "music.group_member"
+  ],
+  "olympics.olympic_athlete": [
+    "people.measured_person",
+    "sports.pro_athlete",
+    "people.person"
+  ],
+  "film.person_or_entity_appearing_in_film": [
+    "people.person"
+  ],
+  "cvg.game_version": [],
+  "music.writer": [
+    "people.person",
+    "music.composer",
+    "music.artist",
+    "music.group_member"
+  ],
+  "medicine.manufactured_drug_form": [
+    "business.consumer_product"
+  ],
+  "influence.influence_node": [
+    "people.person"
+  ],
+  "business.issue": [],
+  "music.featured_artist": [
+    "music.artist",
+    "people.person",
+    "music.group_member"
+  ],
+  "business.issuer": [
+    "organization.organization",
+    "business.business_operation"
+  ],
+  "protected_sites.listed_site": [
+    "location.location",
+    "architecture.structure",
+    "architecture.building"
+  ],
+  "geography.body_of_water": [
+    "geography.geographical_feature",
+    "location.location",
+    "geography.river"
+  ],
+  "cvg.computer_videogame": [],
+  "location.administrative_division": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.location"
+  ],
+  "military.military_person": [
+    "people.person",
+    "people.deceased_person"
+  ],
+  "film.editor": [
+    "people.person"
+  ],
+  "visual_art.artwork": [],
+  "sports.sports_team": [
+    "organization.organization"
+  ],
+  "internet.social_network_user": [
+    "music.artist"
+  ],
+  "music.release_component": [
+    "media_common.creative_work",
+    "music.release"
+  ],
+  "film.cinematographer": [
+    "people.person"
+  ],
+  "media_common.quotation": [],
+  "film.music_contributor": [
+    "people.person"
+  ],
+  "business.business_location": [
+    "business.employer"
+  ],
+  "education.academic": [
+    "people.person",
+    "book.author"
+  ],
+  "book.book_subject": [],
+  "geography.river": [
+    "geography.geographical_feature",
+    "location.location",
+    "geography.body_of_water"
+  ],
+  "film.film_festival_event": [
+    "time.event"
+  ],
+  "visual_art.visual_artist": [
+    "people.person",
+    "people.deceased_person"
+  ],
+  "metropolitan_transit.transit_stop": [
+    "location.location"
+  ],
+  "organization.organization_founder": [
+    "people.person"
+  ],
+  "music.producer": [
+    "people.person",
+    "music.artist",
+    "music.group_member"
+  ],
+  "location.hud_county_place": [
+    "location.location",
+    "location.hud_foreclosure_area",
+    "location.statistical_region",
+    "location.dated_location",
+    "location.citytown"
+  ],
+  "astronomy.celestial_object": [
+    "astronomy.orbital_relationship",
+    "astronomy.astronomical_discovery",
+    "astronomy.asteroid",
+    "astronomy.star_system_body"
+  ],
+  "american_football.football_player": [
+    "people.measured_person",
+    "sports.pro_athlete",
+    "people.person"
+  ],
+  "music.lyricist": [
+    "people.person",
+    "music.artist",
+    "music.composer",
+    "music.writer",
+    "music.group_member"
+  ],
+  "education.university": [
+    "education.educational_institution",
+    "business.employer",
+    "organization.organization",
+    "location.location",
+    "education.educational_institution_campus"
+  ],
+  "book.periodical": [],
+  "education.educational_institution_campus": [
+    "location.location",
+    "organization.organization",
+    "business.employer",
+    "education.educational_institution",
+    "education.university"
+  ],
+  "broadcast.broadcast": [
+    "broadcast.radio_station"
+  ],
+  "boats.ship": [],
+  "architecture.venue": [
+    "location.location",
+    "architecture.structure",
+    "projects.project_focus"
+  ],
+  "astronomy.orbital_relationship": [
+    "astronomy.celestial_object",
+    "astronomy.astronomical_discovery",
+    "astronomy.asteroid",
+    "astronomy.star_system_body"
+  ],
+  "fictional_universe.work_of_fiction": [
+    "book.written_work",
+    "book.book"
+  ],
+  "music.multipart_release": [
+    "media_common.creative_work",
+    "music.release"
+  ],
+  "music.soundtrack": [
+    "music.album"
+  ],
+  "internet.website": [],
+  "travel.tourist_attraction": [
+    "location.location"
+  ],
+  "film.film_story_contributor": [
+    "people.person",
+    "film.writer"
+  ],
+  "biology.gene_group": [
+    "biology.gene_ontology_group"
+  ],
+  "astronomy.astronomical_discovery": [
+    "astronomy.celestial_object",
+    "astronomy.orbital_relationship",
+    "astronomy.asteroid",
+    "astronomy.star_system_body"
+  ],
+  "biology.gene_ontology_group": [
+    "biology.gene_group"
+  ],
+  "baseball.baseball_player": [
+    "people.measured_person",
+    "sports.pro_athlete",
+    "people.person"
+  ],
+  "astronomy.asteroid": [
+    "astronomy.astronomical_discovery",
+    "astronomy.orbital_relationship",
+    "astronomy.celestial_object",
+    "astronomy.star_system_body"
+  ],
+  "astronomy.star_system_body": [
+    "astronomy.celestial_object",
+    "astronomy.orbital_relationship",
+    "astronomy.astronomical_discovery",
+    "astronomy.asteroid"
+  ],
+  "royalty.noble_person": [
+    "people.person",
+    "people.deceased_person"
+  ],
+  "transportation.road": [
+    "location.location"
+  ],
+  "tv.tv_producer": [
+    "people.person",
+    "award.award_nominee",
+    "award.award_winner"
+  ],
+  "education.school_district": [
+    "organization.organization",
+    "location.location"
+  ],
+  "time.recurring_event": [],
+  "sports.sports_league_season": [
+    "time.event"
+  ],
+  "book.published_work": [
+    "book.written_work"
+  ],
+  "film.film_screening_venue": [
+    "time.event",
+    "film.film_festival_event"
+  ],
+  "cricket.cricket_player": [
+    "people.measured_person",
+    "sports.pro_athlete",
+    "people.person"
+  ],
+  "award.award_category": [],
+  "award.ranked_item": [
+    "film.film"
+  ],
+  "chemistry.chemical_compound": [],
+  "book.book_character": [
+    "fictional_universe.fictional_character"
+  ],
+  "business.job_title": [],
+  "medicine.drug_formulation": [],
+  "geography.mountain": [
+    "geography.geographical_feature",
+    "location.location"
+  ],
+  "broadcast.radio_station": [
+    "broadcast.broadcast"
+  ],
+  "tv.tv_personality": [
+    "people.person"
+  ],
+  "soccer.football_team": [
+    "sports.sports_team",
+    "organization.organization"
+  ],
+  "community.discussion_thread": [],
+  "book.scholarly_work": [
+    "book.written_work",
+    "education.dissertation"
+  ],
+  "book.publication": [
+    "book.magazine_issue"
+  ],
+  "basketball.basketball_player": [
+    "people.measured_person",
+    "sports.pro_athlete",
+    "people.person"
+  ],
+  "media_common.adaptation": [
+    "film.film"
+  ],
+  "film.film_art_director": [
+    "people.person"
+  ],
+  "film.film_production_designer": [
+    "people.person"
+  ],
+  "education.dissertation": [
+    "book.written_work",
+    "book.scholarly_work"
+  ],
+  "organization.non_profit_organization": [
+    "organization.organization",
+    "business.employer",
+    "business.business_operation"
+  ],
+  "broadcast.artist": [
+    "music.artist",
+    "people.person"
+  ],
+  "government.election": [
+    "time.event"
+  ],
+  "aviation.airport": [
+    "location.location"
+  ],
+  "theater.theater_actor": [
+    "people.person",
+    "film.actor"
+  ],
+  "military.military_unit": [
+    "organization.organization"
+  ],
+  "medicine.medical_treatment": [
+    "medicine.condition_prevention_factors",
+    "medicine.routed_drug"
+  ],
+  "film.film_costumer_designer": [
+    "people.person"
+  ],
+  "medicine.disease": [],
+  "theater.theater_production": [
+    "award.award_nominated_work"
+  ],
+  "government.u_s_congressperson": [
+    "government.politician",
+    "people.person",
+    "people.deceased_person"
+  ],
+  "military.military_conflict": [
+    "time.event",
+    "military.battle"
+  ],
+  "aviation.aircraft_model": [],
+  "book.publishing_company": [
+    "organization.organization",
+    "business.business_operation"
+  ],
+  "theater.theater_character": [
+    "fictional_universe.fictional_character"
+  ],
+  "computer.software": [],
+  "geography.lake": [
+    "geography.body_of_water",
+    "geography.geographical_feature",
+    "location.location"
+  ],
+  "cvg.cvg_developer": [],
+  "sports.tournament_event_competition": [
+    "time.event"
+  ],
+  "geography.island": [
+    "geography.geographical_feature",
+    "location.location"
+  ],
+  "tv.tv_writer": [
+    "people.person",
+    "award.award_nominee"
+  ],
+  "media_common.adapted_work": [
+    "book.written_work",
+    "book.book"
+  ],
+  "film.film_distributor": [],
+  "sports.sports_facility": [
+    "architecture.venue",
+    "location.location",
+    "architecture.structure",
+    "projects.project_focus"
+  ],
+  "symbols.namesake": [],
+  "business.defunct_company": [
+    "organization.organization",
+    "business.business_operation",
+    "business.employer"
+  ],
+  "library.public_library": [],
+  "theater.play": [
+    "book.written_work"
+  ],
+  "medicine.icd_9_cm_classification": [],
+  "royalty.chivalric_order_member": [
+    "people.person",
+    "people.deceased_person"
+  ],
+  "language.human_language": [],
+  "library.public_library_system": [],
+  "business.brand": [],
+  "people.family_member": [
+    "people.person",
+    "people.deceased_person"
+  ],
+  "government.political_district": [
+    "location.dated_location",
+    "location.location"
+  ],
+  "medicine.drug": [],
+  "government.political_party": [
+    "organization.organization",
+    "business.employer"
+  ],
+  "book.magazine_issue": [
+    "book.publication"
+  ],
+  "medicine.condition_prevention_factors": [
+    "medicine.medical_treatment",
+    "medicine.routed_drug"
+  ],
+  "book.newspaper": [
+    "book.periodical"
+  ],
+  "dining.restaurant": [
+    "business.business_location",
+    "business.employer"
+  ],
+  "music.engineer": [
+    "people.person"
+  ],
+  "protected_sites.protected_site": [
+    "location.location",
+    "location.dated_location"
+  ],
+  "architecture.museum": [
+    "travel.tourist_attraction",
+    "location.location",
+    "architecture.structure",
+    "projects.project_focus"
+  ],
+  "film.film_set_designer": [
+    "people.person"
+  ],
+  "food.food": [],
+  "medicine.routed_drug": [
+    "medicine.medical_treatment",
+    "medicine.condition_prevention_factors"
+  ],
+  "ice_hockey.hockey_player": [
+    "people.measured_person",
+    "sports.pro_athlete",
+    "people.person"
+  ],
+  "internet.website_owner": [
+    "organization.organization",
+    "business.employer",
+    "business.business_operation"
+  ],
+  "film.film_job": [],
+  "architecture.architect": [
+    "people.person",
+    "people.deceased_person"
+  ],
+  "book.literary_series": [],
+  "location.uk_civil_parish": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "location.citytown"
+  ],
+  "book.magazine": [
+    "book.periodical"
+  ],
+  "tv.tv_program_creator": [
+    "people.person"
+  ],
+  "biology.organism": [],
+  "projects.project": [],
+  "transportation.bridge": [
+    "location.location",
+    "architecture.structure",
+    "projects.project_focus"
+  ],
+  "religion.place_of_worship": [
+    "location.location",
+    "architecture.structure",
+    "projects.project_focus",
+    "architecture.building"
+  ],
+  "location.capital_of_administrative_division": [
+    "location.dated_location",
+    "location.location",
+    "location.statistical_region",
+    "location.citytown"
+  ],
+  "film.production_company": [
+    "organization.organization"
+  ],
+  "wine.wine": [
+    "business.consumer_product"
+  ],
+  "architecture.skyscraper": [
+    "architecture.building",
+    "projects.project_focus",
+    "location.location",
+    "architecture.structure"
+  ],
+  "government.government_agency": [
+    "organization.organization"
+  ],
+  "medicine.hospital": [
+    "location.location",
+    "architecture.structure",
+    "architecture.building",
+    "projects.project_focus"
+  ],
+  "location.neighborhood": [
+    "location.location"
+  ],
+  "martial_arts.martial_artist": [
+    "people.person",
+    "people.measured_person",
+    "sports.pro_athlete",
+    "sports.boxer"
+  ],
+  "award.competition": [
+    "time.event"
+  ],
+  "automotive.model": [],
+  "military.battle": [
+    "time.event",
+    "military.military_conflict"
+  ],
+  "royalty.noble_title": [],
+  "olympics.olympic_event_competition": [
+    "time.event"
+  ],
+  "award.award_ceremony": [
+    "time.event"
+  ],
+  "business.industry": [
+    "book.book_subject"
+  ],
+  "biology.protein": [],
+  "projects.project_participant": [
+    "people.person"
+  ],
+  "broadcast.content": [],
+  "people.family_name": [],
+  "symbols.name_source": [
+    "people.person",
+    "people.deceased_person"
+  ],
+  "people.ethnicity": [],
+  "cvg.cvg_publisher": [
+    "organization.organization",
+    "business.business_operation",
+    "business.employer",
+    "cvg.cvg_developer"
+  ],
+  "book.periodical_publisher": [
+    "business.employer"
+  ],
+  "law.legal_case": [
+    "time.event"
+  ],
+  "periodicals.newspaper_circulation_area": [
+    "location.location",
+    "location.statistical_region",
+    "location.dated_location",
+    "location.citytown",
+    "location.hud_foreclosure_area"
+  ],
+  "location.census_designated_place": [
+    "location.statistical_region",
+    "location.location",
+    "location.hud_county_place",
+    "location.hud_foreclosure_area",
+    "location.dated_location"
+  ],
+  "religion.religious_leader": [
+    "people.person",
+    "people.deceased_person"
+  ],
+  "film.film_casting_director": [
+    "people.person"
+  ],
+  "book.journal": [
+    "book.periodical"
+  ],
+  "government.government_office_or_title": [],
+  "book.short_story": [
+    "book.written_work",
+    "fictional_universe.work_of_fiction",
+    "book.published_work"
+  ],
+  "organization.organization_member": [
+    "people.person"
+  ],
+  "sports.boxer": [
+    "people.measured_person",
+    "sports.pro_athlete",
+    "people.person",
+    "martial_arts.martial_artist"
+  ],
+  "comic_books.comic_book_character": [
+    "fictional_universe.fictional_character"
+  ],
+  "aviation.aviation_waypoint": [
+    "location.location"
+  ],
+  "fictional_universe.person_in_fiction": [
+    "people.person",
+    "people.deceased_person"
+  ],
+  "law.inventor": [
+    "people.person"
+  ],
+  "tv.tv_director": [
+    "people.person",
+    "film.director",
+    "award.award_nominee"
+  ],
+  "book.translation": [
+    "book.published_work"
+  ],
+  "sports.sports_league": [
+    "organization.organization",
+    "business.employer"
+  ],
+  "religion.religious_leadership_jurisdiction": [
+    "location.dated_location",
+    "location.location"
+  ],
+  "travel.travel_destination": [
+    "location.location",
+    "location.statistical_region",
+    "location.dated_location",
+    "location.citytown"
+  ],
+  "event.disaster": [
+    "time.event"
+  ],
+  "sports.drafted_athlete": [
+    "people.measured_person",
+    "people.person",
+    "sports.pro_athlete",
+    "basketball.basketball_player"
+  ],
+  "award.competitor": [
+    "people.person"
+  ],
+  "exhibitions.exhibition": [],
+  "law.judge": [
+    "people.person"
+  ],
+  "film.film_festival": [
+    "time.recurring_event"
+  ],
+  "music.guitarist": [
+    "people.person",
+    "music.artist",
+    "music.group_member",
+    "music.composer"
+  ],
+  "people.profession": [],
+  "aviation.aircraft_owner": [
+    "organization.organization",
+    "business.business_operation",
+    "aviation.airline",
+    "business.employer"
+  ],
+  "aviation.airline": [
+    "business.business_operation",
+    "organization.organization",
+    "aviation.aircraft_owner",
+    "business.employer"
+  ],
+  "metropolitan_transit.transit_line": [],
+  "music.music_video": [
+    "award.award_nominated_work"
+  ],
+  "medicine.drug_ingredient": [
+    "medicine.drug"
+  ],
+  "award.award": [],
+  "tennis.tennis_player": [
+    "people.measured_person",
+    "sports.pro_athlete",
+    "people.person"
+  ],
+  "sports.cyclist": [
+    "people.measured_person",
+    "sports.pro_athlete",
+    "people.person"
+  ],
+  "food.beer": [],
+  "people.place_of_interment": [
+    "location.location",
+    "location.dated_location",
+    "location.cemetery"
+  ],
+  "comic_books.comic_book_series": [],
+  "education.field_of_study": [],
+  "film.film_subject": [],
+  "government.general_election": [
+    "time.event"
+  ],
+  "law.invention": [],
+  "sports.sports_championship_event": [
+    "time.event"
+  ],
+  "royalty.monarch": [
+    "people.person",
+    "royalty.noble_person",
+    "people.deceased_person"
+  ],
+  "book.translated_work": [
+    "book.written_work",
+    "book.book"
+  ],
+  "location.us_cbsa": [
+    "location.location",
+    "location.hud_section_8_area"
+  ],
+  "computer.file_format": [],
+  "music.songwriter": [
+    "music.lyricist",
+    "music.composer",
+    "people.person",
+    "music.artist",
+    "music.writer",
+    "music.group_member"
+  ],
+  "computer.software_developer": [],
+  "tv.tv_program_guest": [
+    "people.person",
+    "tv.tv_actor",
+    "award.award_nominee",
+    "film.person_or_entity_appearing_in_film"
+  ],
+  "medicine.anatomical_structure": [],
+  "travel.accommodation": [
+    "location.location",
+    "travel.hotel",
+    "architecture.structure",
+    "architecture.building",
+    "projects.project_focus"
+  ],
+  "business.shopping_center": [
+    "location.location",
+    "architecture.structure",
+    "projects.project_focus"
+  ],
+  "location.australian_suburb": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.location"
+  ],
+  "sports.golfer": [
+    "people.person",
+    "people.measured_person",
+    "sports.pro_athlete"
+  ],
+  "location.us_county": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "location.hud_foreclosure_area"
+  ],
+  "astronomy.star": [
+    "astronomy.celestial_object",
+    "astronomy.orbital_relationship"
+  ],
+  "chemistry.isotope": [],
+  "cricket.cricket_bowler": [
+    "cricket.cricket_player",
+    "people.measured_person",
+    "sports.pro_athlete",
+    "people.person"
+  ],
+  "education.school_mascot": [],
+  "cricket.cricket_player_stats": [],
+  "biology.pedigreed_animal": [
+    "biology.organism",
+    "biology.owned_animal"
+  ],
+  "sports.australian_rules_footballer": [
+    "people.measured_person",
+    "sports.pro_athlete",
+    "people.person"
+  ],
+  "travel.hotel": [
+    "travel.accommodation",
+    "location.location",
+    "architecture.structure",
+    "architecture.building",
+    "projects.project_focus"
+  ],
+  "biology.owned_animal": [
+    "biology.organism",
+    "biology.pedigreed_animal"
+  ],
+  "broadcast.tv_station": [
+    "broadcast.broadcast"
+  ],
+  "boats.ship_class": [],
+  "geography.mountain_range": [
+    "geography.geographical_feature",
+    "location.location"
+  ],
+  "rail.locomotive_class": [],
+  "theater.theater_producer": [
+    "people.person",
+    "award.award_nominee"
+  ],
+  "soccer.football_team_manager": [
+    "people.person",
+    "people.measured_person",
+    "sports.pro_athlete",
+    "soccer.football_player"
+  ],
+  "fictional_universe.fictional_setting": [],
+  "rail.railway": [
+    "location.location"
+  ],
+  "award.hall_of_fame_inductee": [
+    "people.person",
+    "people.measured_person",
+    "people.deceased_person"
+  ],
+  "food.dish": [
+    "food.food"
+  ],
+  "games.game": [],
+  "american_football.football_coach": [
+    "people.person"
+  ],
+  "venture_capital.venture_investor": [],
+  "venture_capital.venture_funded_company": [
+    "business.business_operation",
+    "business.employer",
+    "organization.organization"
+  ],
+  "government.governmental_jurisdiction": [
+    "location.location",
+    "location.dated_location",
+    "location.statistical_region",
+    "location.citytown"
+  ],
+  "broadcast.podcast_feed": [
+    "broadcast.broadcast"
+  ],
+  "basketball.basketball_coach": [
+    "people.person",
+    "people.measured_person",
+    "sports.pro_athlete"
+  ],
+  "celebrities.celebrity": [
+    "people.person",
+    "film.actor",
+    "tv.tv_actor",
+    "award.award_nominee"
+  ],
+  "theater.theater_company": [
+    "organization.organization"
+  ],
+  "tv.tv_network": [
+    "organization.organization",
+    "business.employer"
+  ],
+  "location.hud_section_8_area": [
+    "location.us_cbsa",
+    "location.location"
+  ],
+  "architecture.house": [
+    "architecture.building",
+    "projects.project_focus",
+    "location.location",
+    "architecture.structure"
+  ],
+  "time.time_zone": [],
+  "medicine.drug_manufacturer": [],
+  "theater.theater_director": [
+    "people.person"
+  ],
+  "soccer.football_league_season": [
+    "time.event",
+    "sports.sports_league_season"
+  ],
+  "medicine.drug_brand": [
+    "business.brand"
+  ],
+  "business.shareholder": [
+    "people.person",
+    "business.board_member"
+  ],
+  "business.consumer_company": [
+    "business.business_operation",
+    "organization.organization",
+    "business.employer"
+  ],
+  "astronomy.extraterrestrial_location": [
+    "symbols.namesake"
+  ],
+  "music.genre": [],
+  "business.product_category": [],
+  "medicine.physician": [
+    "people.person",
+    "people.deceased_person"
+  ],
+  "music.conductor": [
+    "people.person",
+    "music.artist",
+    "people.deceased_person"
+  ],
+  "medicine.symptom": [],
+  "fictional_universe.fictional_character_creator": [
+    "people.person",
+    "book.author"
+  ],
+  "theater.theater": [
+    "architecture.venue",
+    "location.location",
+    "architecture.structure",
+    "projects.project_focus",
+    "architecture.building"
+  ],
+  "media_common.media_genre": [],
+  "theater.theater_designer": [
+    "people.person"
+  ],
+  "amusement_parks.ride": [],
+  "opera.opera": [
+    "music.composition"
+  ],
+  "film.film_location": [
+    "location.location",
+    "location.dated_location",
+    "location.statistical_region"
+  ],
+  "broadcast.tv_channel": [
+    "broadcast.broadcast",
+    "organization.organization"
+  ],
+  "opera.opera_character": [
+    "fictional_universe.fictional_character"
+  ],
+  "law.us_patent": [],
+  "sports.school_sports_team": [
+    "sports.sports_team"
+  ],
+  "location.cemetery": [
+    "location.dated_location",
+    "people.place_of_interment",
+    "location.location"
+  ],
+  "fictional_universe.character_species": [],
+  "internet.blog": [
+    "award.award_nominated_work"
+  ],
+  "time.holiday": [],
+  "chess.chess_player": [
+    "people.person"
+  ],
+  "cvg.cvg_designer": [
+    "people.person"
+  ],
+  "book.short_non_fiction": [
+    "book.written_work",
+    "book.published_work"
+  ],
+  "organization.endowed_organization": [
+    "business.employer",
+    "organization.organization",
+    "education.educational_institution",
+    "education.university",
+    "location.location",
+    "education.educational_institution_campus",
+    "award.ranked_item"
+  ],
+  "cvg.game_character": [
+    "fictional_universe.fictional_character"
+  ],
+  "people.family": [],
+  "biology.animal": [
+    "biology.organism_classification",
+    "biology.animal_breed"
+  ],
+  "food.ingredient": [
+    "food.food"
+  ],
+  "geography.glacier": [
+    "location.location",
+    "geography.geographical_feature"
+  ],
+  "cricket.cricket_bowler_stats": [],
+  "book.poem": [
+    "book.written_work",
+    "book.published_work"
+  ],
+  "government.governmental_body": [],
+  "organization.organization_sector": [],
+  "sports.multi_event_tournament": [
+    "time.event"
+  ],
+  "organization.organization_scope": [
+    "location.location",
+    "location.statistical_region",
+    "location.dated_location"
+  ],
+  "tv.tv_soundtrack": [
+    "music.album",
+    "music.soundtrack"
+  ],
+  "film.film_series": [],
+  "basketball.basketball_team": [
+    "sports.sports_team",
+    "organization.organization"
+  ],
+  "music.performance_role": [
+    "music.instrument"
+  ],
+  "architecture.architectural_structure_owner": [],
+  "media_common.quotation_subject": [],
+  "music.concert_tour": [
+    "time.event"
+  ],
+  "aviation.aircraft_manufacturer": [],
+  "organization.membership_organization": [
+    "organization.organization",
+    "business.employer"
+  ],
+  "business.product_line": [],
+  "music.concert_film": [
+    "film.film",
+    "media_common.netflix_title"
+  ],
+  "sports.sports_official": [
+    "people.person"
+  ],
+  "spaceflight.spacecraft": [
+    "spaceflight.satellite"
+  ],
+  "business.sponsor": [
+    "organization.organization",
+    "business.employer",
+    "business.business_operation"
+  ],
+  "visual_art.art_subject": [],
+  "medicine.notable_person_with_medical_condition": [
+    "people.person"
+  ],
+  "zoos.zoo_exhibit": [],
+  "food.brewery_brand_of_beer": [
+    "organization.organization",
+    "business.business_operation"
+  ],
+  "cvg.musical_game_song": [
+    "music.recording"
+  ],
+  "sports.sports_team_location": [
+    "location.location",
+    "location.statistical_region",
+    "location.dated_location",
+    "location.citytown"
+  ],
+  "military.armed_force": [
+    "organization.organization"
+  ],
+  "business.company_advisor": [
+    "people.person"
+  ],
+  "biology.animal_breed": [
+    "biology.organism_classification",
+    "biology.animal"
+  ],
+  "aviation.airliner_accident": [
+    "event.disaster",
+    "time.event"
+  ],
+  "tv.tv_theme_song": [
+    "music.composition"
+  ],
+  "business.sponsored_recipient": [
+    "people.person"
+  ],
+  "food.beverage": [],
+  "theater.theater_production_staff": [
+    "people.person"
+  ],
+  "ice_hockey.hockey_team": [
+    "sports.sports_team",
+    "organization.organization"
+  ],
+  "meteorology.tropical_cyclone": [],
+  "religion.deity": [],
+  "broadcast.internet_stream": [
+    "broadcast.broadcast"
+  ],
+  "soccer.football_match": [
+    "time.event"
+  ],
+  "architecture.lighthouse": [
+    "location.location",
+    "architecture.structure",
+    "projects.project_focus"
+  ],
+  "cvg.video_game_soundtrack": [
+    "music.album",
+    "music.soundtrack"
+  ],
+  "boats.ship_builder": [],
+  "book.illustrator": [
+    "people.person"
+  ],
+  "music.instrument": [
+    "music.performance_role"
+  ],
+  "internet.blogger": [
+    "people.person"
+  ],
+  "education.department": [],
+  "fictional_universe.fictional_organization": [],
+  "music.arrangement": [
+    "music.composition"
+  ],
+  "spaceflight.satellite": [
+    "spaceflight.spacecraft"
+  ],
+  "religion.religious_organization": [
+    "organization.organization"
+  ],
+  "dining.chef": [
+    "people.person",
+    "influence.influence_node"
+  ],
+  "government.legislative_session": [],
+  "film.film_featured_song": [
+    "music.composition"
+  ],
+  "geography.mountaineer": [
+    "people.person"
+  ],
+  "biology.deceased_organism": [
+    "biology.organism",
+    "biology.owned_animal",
+    "biology.pedigreed_animal"
+  ],
+  "digicams.digital_camera": [
+    "business.consumer_product"
+  ],
+  "event.disaster_victim": [
+    "people.deceased_person",
+    "people.person"
+  ],
+  "interests.collectable_item": [
+    "business.consumer_product"
+  ],
+  "book.periodical_editor": [
+    "people.person"
+  ],
+  "architecture.building_occupant": [
+    "organization.organization",
+    "business.employer"
+  ],
+  "baseball.baseball_team": [
+    "sports.sports_team"
+  ],
+  "book.translator": [
+    "people.person"
+  ],
+  "food.drinking_establishment": [
+    "business.business_location",
+    "business.employer"
+  ],
+  "sports.sports_team_coach": [
+    "people.person",
+    "people.measured_person",
+    "sports.pro_athlete"
+  ],
+  "award.award_presenting_organization": [
+    "organization.organization"
+  ],
+  "sports.golf_facility": [
+    "location.location"
+  ],
+  "computer.programming_language": [],
+  "location.cn_county": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "automotive.exterior_color": [],
+  "wine.wine_producer": [
+    "business.business_operation",
+    "organization.organization",
+    "business.employer"
+  ],
+  "dataworld.information_source": [],
+  "astronomy.astronomer": [
+    "people.person",
+    "people.deceased_person"
+  ],
+  "broadcast.radio_station_owner": [],
+  "sports.professional_sports_team": [
+    "sports.sports_team"
+  ],
+  "theater.theatrical_composer": [
+    "people.person",
+    "music.artist",
+    "award.award_nominee"
+  ],
+  "sports.golf_course": [
+    "location.location",
+    "award.ranked_item"
+  ],
+  "book.journal_article": [
+    "book.written_work",
+    "book.scholarly_work"
+  ],
+  "military.military_commander": [
+    "people.person",
+    "people.deceased_person",
+    "military.military_person"
+  ],
+  "metropolitan_transit.transit_system": [],
+  "theater.musical_soundtrack": [
+    "music.album",
+    "music.soundtrack"
+  ],
+  "geography.mountain_pass": [
+    "geography.geographical_feature",
+    "location.location"
+  ],
+  "music.festival": [
+    "time.recurring_event"
+  ],
+  "tennis.tennis_tournament_champion": [
+    "tennis.tennis_player",
+    "people.measured_person",
+    "sports.pro_athlete",
+    "people.person"
+  ],
+  "medicine.risk_factor": [],
+  "geography.waterfall": [
+    "geography.body_of_water",
+    "geography.geographical_feature",
+    "location.location"
+  ],
+  "people.cause_of_death": [
+    "medicine.disease"
+  ],
+  "award.recurring_competition": [
+    "time.recurring_event"
+  ],
+  "cvg.game_series": [],
+  "theater.theatrical_lyricist": [
+    "people.person",
+    "book.author",
+    "award.award_nominee"
+  ],
+  "comic_strips.comic_strip": [],
+  "location.country": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.location"
+  ],
+  "architecture.building_complex": [
+    "location.location",
+    "projects.project_focus"
+  ],
+  "exhibitions.exhibition_subject": [
+    "book.book_subject"
+  ],
+  "comic_books.comic_book_creator": [
+    "people.person"
+  ],
+  "media_common.quotation_source": [],
+  "fictional_universe.character_occupation": [],
+  "architecture.architecture_firm": [
+    "business.business_operation",
+    "business.employer",
+    "organization.organization"
+  ],
+  "zoos.zoo_animal": [
+    "biology.organism"
+  ],
+  "government.election_campaign": [],
+  "business.asset": [
+    "location.location"
+  ],
+  "visual_art.visual_art_medium": [],
+  "symbols.coat_of_arms": [],
+  "broadcast.producer": [],
+  "sports.sports_award_winner": [
+    "people.person",
+    "people.measured_person",
+    "sports.pro_athlete",
+    "award.award_winner",
+    "baseball.baseball_player"
+  ],
+  "computer.computer": [],
+  "language.language_family": [],
+  "conferences.conference_series": [
+    "time.recurring_event"
+  ],
+  "internet.website_category": [],
+  "music.music_video_director": [
+    "people.person",
+    "award.award_nominee",
+    "film.director"
+  ],
+  "medicine.disease_cause": [],
+  "symbols.flag": [],
+  "computer.computer_scientist": [
+    "people.person"
+  ],
+  "biology.cytogenetic_band": [],
+  "government.election_poll": [],
+  "boxing.boxing_match": [
+    "time.event"
+  ],
+  "sports.tournament_event_competitor": [
+    "people.measured_person",
+    "sports.pro_athlete",
+    "people.person",
+    "olympics.olympic_athlete"
+  ],
+  "location.jp_city_town": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.citytown",
+    "location.location"
+  ],
+  "military.military_post": [
+    "location.location"
+  ],
+  "time.day_of_year": [],
+  "olympics.olympic_event": [],
+  "zoos.zoo": [
+    "location.location",
+    "travel.tourist_attraction",
+    "business.employer"
+  ],
+  "amusement_parks.roller_coaster": [
+    "amusement_parks.ride",
+    "location.location"
+  ],
+  "opera.librettist": [
+    "people.person",
+    "people.deceased_person",
+    "book.author"
+  ],
+  "engineering.engine": [
+    "projects.project_focus"
+  ],
+  "education.academic_post_title": [],
+  "organization.role": [],
+  "film.content_rating": [
+    "tv.tv_series_episode"
+  ],
+  "film.film_genre": [
+    "media_common.media_genre"
+  ],
+  "games.game_expansion": [
+    "book.written_work",
+    "book.book"
+  ],
+  "finance.currency": [],
+  "sports.sport": [],
+  "media_common.dedicated_work": [
+    "music.composition"
+  ],
+  "film.film_company": [
+    "business.business_operation",
+    "business.employer",
+    "organization.organization"
+  ],
+  "wine.vineyard": [
+    "location.location"
+  ],
+  "tv.tv_subject": [],
+  "location.australian_local_government_area": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "fictional_universe.fictional_object": [],
+  "tv.tv_crewmember": [
+    "people.person",
+    "award.award_nominee"
+  ],
+  "organization.organization_partnership": [
+    "organization.organization",
+    "business.business_operation"
+  ],
+  "amusement_parks.park": [
+    "location.location",
+    "travel.tourist_attraction",
+    "business.employer"
+  ],
+  "astronomy.astronomical_observatory": [
+    "projects.project_focus",
+    "location.location"
+  ],
+  "law.court": [],
+  "event.public_speaking_event": [
+    "time.event",
+    "conferences.conference"
+  ],
+  "visual_art.art_owner": [
+    "location.location",
+    "architecture.museum",
+    "travel.tourist_attraction"
+  ],
+  "media_common.netflix_genre": [],
+  "government.legislative_committee": [],
+  "baseball.baseball_coach": [
+    "people.person",
+    "people.measured_person",
+    "sports.pro_athlete",
+    "baseball.baseball_player",
+    "sports.sports_team_coach"
+  ],
+  "business.competitive_space": [],
+  "dataworld.incompatible_types": [],
+  "computer.software_genre": [],
+  "religion.religious_leadership_title": [],
+  "military.war": [
+    "time.event",
+    "military.military_conflict"
+  ],
+  "location.in_district": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "spaceflight.astronaut": [
+    "people.person"
+  ],
+  "music.bassist": [
+    "people.person",
+    "music.artist",
+    "music.group_member"
+  ],
+  "comic_books.comic_book_issue": [],
+  "education.athletics_brand": [],
+  "education.educational_degree": [],
+  "aviation.aircraft_type": [],
+  "religion.religion": [],
+  "cvg.game_voice_actor": [
+    "people.person",
+    "film.actor",
+    "tv.tv_actor"
+  ],
+  "radio.radio_program": [
+    "broadcast.content",
+    "award.award_winning_work"
+  ],
+  "american_football.football_team": [
+    "sports.sports_team"
+  ],
+  "sports.sports_team_captain": [
+    "people.person",
+    "people.measured_person",
+    "sports.pro_athlete",
+    "cricket.cricket_player",
+    "cricket.cricket_bowler"
+  ],
+  "sports.mascot": [],
+  "royalty.order_of_chivalry": [],
+  "computer.operating_system": [
+    "computer.software"
+  ],
+  "biology.hybrid": [
+    "biology.organism_classification"
+  ],
+  "award.long_listed_work": [
+    "book.written_work",
+    "book.book",
+    "award.award_nominated_work"
+  ],
+  "media_common.dedicatee": [
+    "people.person",
+    "people.deceased_person"
+  ],
+  "location.de_city": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.citytown",
+    "location.location",
+    "location.administrative_division",
+    "location.capital_of_administrative_division"
+  ],
+  "exhibitions.exhibition_venue": [
+    "location.location",
+    "travel.tourist_attraction",
+    "projects.project_focus",
+    "architecture.structure",
+    "architecture.museum"
+  ],
+  "business.customer": [
+    "organization.organization",
+    "business.employer",
+    "business.business_operation"
+  ],
+  "conferences.conference": [
+    "time.event",
+    "event.public_speaking_event"
+  ],
+  "wine.grape_variety": [
+    "biology.organism_classification"
+  ],
+  "organization.organization_type": [],
+  "automotive.company": [
+    "business.business_operation",
+    "business.employer",
+    "organization.organization"
+  ],
+  "fictional_universe.fictional_universe": [],
+  "automotive.make": [],
+  "astronomy.galaxy": [
+    "astronomy.celestial_object"
+  ],
+  "soccer.football_league": [
+    "time.recurring_event",
+    "organization.organization",
+    "sports.sports_league",
+    "business.employer"
+  ],
+  "cricket.cricket_umpire": [
+    "people.person"
+  ],
+  "music.orchestra": [
+    "music.musical_group",
+    "music.artist"
+  ],
+  "medicine.diagnostic_test": [],
+  "education.student_radio_station": [
+    "broadcast.broadcast",
+    "broadcast.radio_station"
+  ],
+  "education.fraternity_sorority": [
+    "organization.organization",
+    "business.employer"
+  ],
+  "education.school_newspaper": [
+    "book.periodical",
+    "book.newspaper"
+  ],
+  "location.jp_district": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "media_common.literary_genre": [
+    "media_common.media_genre",
+    "book.book_subject"
+  ],
+  "cvg.cvg_platform": [],
+  "games.playing_card_game": [
+    "games.game"
+  ],
+  "spaceflight.space_mission": [
+    "projects.project_focus",
+    "time.event",
+    "book.book_subject"
+  ],
+  "skiing.ski_area": [
+    "location.location"
+  ],
+  "fashion.fashion_designer": [
+    "people.person"
+  ],
+  "people.appointee": [
+    "people.person"
+  ],
+  "american_football.football_game": [
+    "time.event",
+    "american_football.nfl_game"
+  ],
+  "games.game_designer": [
+    "people.person"
+  ],
+  "food.cheese": [],
+  "american_football.nfl_game": [
+    "american_football.football_game",
+    "time.event"
+  ],
+  "music.opera_singer": [
+    "people.person",
+    "music.artist"
+  ],
+  "military.military_combatant": [
+    "location.location"
+  ],
+  "theater.theater_choreographer": [
+    "people.person",
+    "award.award_nominee"
+  ],
+  "travel.transport_terminus": [
+    "location.location"
+  ],
+  "geography.island_group": [
+    "geography.geographical_feature",
+    "location.location"
+  ],
+  "baseball.baseball_manager": [
+    "people.person",
+    "people.measured_person",
+    "sports.pro_athlete",
+    "baseball.baseball_player",
+    "people.deceased_person"
+  ],
+  "geography.geographical_feature_category": [],
+  "location.ar_department": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "boats.ship_owner": [
+    "people.person"
+  ],
+  "award.long_list_nominee": [
+    "people.person",
+    "book.author",
+    "award.award_nominee",
+    "award.award_winner"
+  ],
+  "location.geocode": [
+    "location.location",
+    "aviation.aviation_waypoint"
+  ],
+  "location.ua_raion": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "time_series.unit": [],
+  "education.academic_institution": [
+    "organization.organization",
+    "business.employer"
+  ],
+  "fictional_universe.character_powers": [],
+  "location.uk_statistical_location": [
+    "location.location",
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division"
+  ],
+  "time.geologic_time_period": [],
+  "comic_strips.comic_strip_creator": [
+    "people.person"
+  ],
+  "sports.defunct_sports_team": [
+    "sports.sports_team",
+    "sports.professional_sports_team"
+  ],
+  "organization.contact_category": [],
+  "tv.multipart_tv_episode": [],
+  "visual_art.color": [],
+  "language.language_writing_system": [],
+  "architecture.architectural_style": [],
+  "tv.tv_genre": [
+    "media_common.media_genre",
+    "book.book_subject"
+  ],
+  "medicine.drug_class": [],
+  "law.courthouse": [
+    "architecture.building",
+    "location.location",
+    "architecture.structure",
+    "protected_sites.listed_site",
+    "projects.project_focus"
+  ],
+  "location.nl_municipality": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "location.citytown"
+  ],
+  "religion.monastery": [
+    "projects.project_focus",
+    "location.location",
+    "architecture.structure",
+    "architecture.building"
+  ],
+  "award.hall_of_fame": [],
+  "boats.ship_type": [],
+  "business.asset_owner": [
+    "organization.organization",
+    "business.employer"
+  ],
+  "location.region": [
+    "location.location",
+    "location.dated_location"
+  ],
+  "theater.musical_director": [
+    "people.person"
+  ],
+  "opera.opera_production": [
+    "award.award_nominated_work"
+  ],
+  "aviation.aircraft_engine_type": [
+    "projects.project_focus",
+    "engineering.engine"
+  ],
+  "chemistry.chemical_classification": [],
+  "event.public_speaker": [
+    "people.person"
+  ],
+  "government.primary_election": [
+    "time.event",
+    "government.election"
+  ],
+  "cvg.computer_game_engine": [],
+  "symbols.flag_referent": [
+    "location.location",
+    "location.dated_location",
+    "location.statistical_region",
+    "book.book_subject",
+    "government.governmental_jurisdiction",
+    "location.country",
+    "organization.organization_scope",
+    "sports.sports_team_location",
+    "olympics.olympic_participating_country",
+    "organization.organization_member",
+    "location.administrative_division"
+  ],
+  "music.guitar": [],
+  "wine.appellation": [
+    "location.location"
+  ],
+  "event.disaster_survivor": [
+    "people.person"
+  ],
+  "meteorology.tropical_cyclone_season": [],
+  "fictional_universe.fictional_employer": [],
+  "language.language_dialect": [],
+  "fashion.garment": [
+    "business.product_category"
+  ],
+  "organization.organization_committee": [],
+  "people.appointed_role": [
+    "business.job_title"
+  ],
+  "language.languoid": [
+    "language.human_language"
+  ],
+  "award.award_discipline": [
+    "book.book_subject"
+  ],
+  "exhibitions.exhibition_sponsor": [],
+  "book.periodical_subject": [
+    "book.book_subject"
+  ],
+  "medicine.surgeon": [
+    "people.person",
+    "medicine.physician",
+    "people.deceased_person"
+  ],
+  "royalty.royal_line": [
+    "people.family"
+  ],
+  "fictional_universe.event_in_fiction": [],
+  "location.place_with_neighborhoods": [
+    "location.location",
+    "location.statistical_region",
+    "location.dated_location",
+    "location.citytown",
+    "periodicals.newspaper_circulation_area",
+    "travel.travel_destination"
+  ],
+  "architecture.tower": [
+    "projects.project_focus",
+    "location.location",
+    "architecture.structure"
+  ],
+  "sports.sports_team_owner": [
+    "people.person"
+  ],
+  "automotive.engine": [],
+  "business.oil_field": [
+    "business.asset",
+    "location.location"
+  ],
+  "book.newspaper_owner": [
+    "organization.organization",
+    "business.employer",
+    "business.business_operation"
+  ],
+  "martial_arts.martial_art": [],
+  "business.board_member_title": [],
+  "comic_strips.comic_strip_character": [
+    "fictional_universe.fictional_character"
+  ],
+  "sports.golf_course_designer": [
+    "people.person"
+  ],
+  "opera.opera_company": [
+    "organization.organization"
+  ],
+  "internet.top_level_domain": [],
+  "military.rank": [],
+  "computer.internet_protocol": [],
+  "architecture.building_function": [],
+  "broadcast.genre": [
+    "book.book_subject"
+  ],
+  "award.ranked_list": [],
+  "sports.sports_championship": [
+    "time.recurring_event"
+  ],
+  "government.political_appointer": [
+    "people.person",
+    "government.politician"
+  ],
+  "religion.religious_text": [],
+  "exhibitions.exhibit": [
+    "visual_art.artwork"
+  ],
+  "film.film_festival_sponsor": [
+    "organization.organization"
+  ],
+  "government.national_anthem": [
+    "music.composition"
+  ],
+  "religion.religious_order": [
+    "religion.religious_organization",
+    "organization.organization"
+  ],
+  "broadcast.tv_station_owner": [
+    "organization.organization",
+    "business.employer",
+    "business.business_operation"
+  ],
+  "computer.computer_processor": [],
+  "location.symbol_of_administrative_division": [
+    "biology.organism_classification"
+  ],
+  "travel.transport_operator": [
+    "organization.organization",
+    "business.business_operation",
+    "business.employer"
+  ],
+  "book.book_edition_series": [],
+  "ice_hockey.hockey_coach": [
+    "people.person",
+    "people.measured_person",
+    "sports.pro_athlete",
+    "ice_hockey.hockey_player"
+  ],
+  "sports.sports_league_draft": [],
+  "atom.feed_item": [],
+  "automotive.generation": [],
+  "interests.collector": [
+    "people.person",
+    "people.deceased_person"
+  ],
+  "location.de_rural_district": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "distilled_spirits.distilled_spirit": [
+    "food.beverage"
+  ],
+  "metropolitan_transit.transit_agency": [
+    "organization.organization",
+    "business.employer"
+  ],
+  "comic_books.comic_book_story": [
+    "fictional_universe.work_of_fiction"
+  ],
+  "tv.tv_episode_segment": [],
+  "award.award_announcement": [
+    "time.event",
+    "award.award_ceremony"
+  ],
+  "interests.interest": [
+    "interests.hobby"
+  ],
+  "education.school_category": [],
+  "event.presented_work": [
+    "book.written_work"
+  ],
+  "spaceflight.rocket": [],
+  "interests.collection_category": [
+    "business.product_category"
+  ],
+  "finance.stock_exchange": [
+    "organization.organization",
+    "business.employer"
+  ],
+  "location.cn_prefecture_level_city": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "location.citytown"
+  ],
+  "dining.cuisine": [],
+  "visual_art.art_period_movement": [],
+  "music.music_video_performer": [
+    "people.person",
+    "music.artist",
+    "film.actor"
+  ],
+  "education.honorary_degree_recipient": [
+    "people.person",
+    "award.award_winner",
+    "book.author"
+  ],
+  "fictional_universe.character_rank": [],
+  "location.ca_census_division": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.location",
+    "location.administrative_division"
+  ],
+  "engineering.material": [],
+  "book.school_or_movement": [],
+  "tv.the_colbert_report_episode": [
+    "tv.tv_series_episode"
+  ],
+  "olympics.olympic_venue": [
+    "location.location",
+    "architecture.venue",
+    "sports.sports_facility",
+    "projects.project_focus",
+    "architecture.structure"
+  ],
+  "travel.hotel_brand": [
+    "organization.organization",
+    "business.employer"
+  ],
+  "government.government": [],
+  "aviation.aircraft_designer": [
+    "people.person"
+  ],
+  "rail.locomotive": [],
+  "cvg.cvg_genre": [
+    "media_common.media_genre"
+  ],
+  "sports.sports_award_type": [],
+  "book.serial_installment": [
+    "book.published_work",
+    "book.written_work",
+    "book.book"
+  ],
+  "music.drummer": [
+    "people.person",
+    "music.artist",
+    "music.group_member"
+  ],
+  "government.government_office_category": [],
+  "interests.hobby": [
+    "interests.interest"
+  ],
+  "architecture.museum_director": [
+    "people.person"
+  ],
+  "book.review": [
+    "book.written_work",
+    "book.published_work",
+    "book.scholarly_work",
+    "book.journal_article"
+  ],
+  "cricket.cricket_coach": [
+    "people.person",
+    "people.measured_person",
+    "sports.pro_athlete",
+    "cricket.cricket_player"
+  ],
+  "astronomy.comet": [
+    "astronomy.orbital_relationship",
+    "astronomy.astronomical_discovery",
+    "astronomy.celestial_object",
+    "astronomy.star_system_body"
+  ],
+  "book.poem_character": [
+    "fictional_universe.fictional_character"
+  ],
+  "kp_lw.common.topic": [
+    "people.person",
+    "kp_lw.philosopher"
+  ],
+  "sports.sports_position": [],
+  "location.cn_county_level_city": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "location.cn_county"
+  ],
+  "medicine.muscle": [
+    "medicine.anatomical_structure"
+  ],
+  "medicine.infectious_disease": [
+    "medicine.disease"
+  ],
+  "projects.project_role": [],
+  "medicine.brain": [
+    "medicine.anatomical_structure"
+  ],
+  "fictional_universe.fictional_job_title": [],
+  "business.trade_union": [
+    "business.employer",
+    "organization.organization"
+  ],
+  "biology.animal_owner": [
+    "people.person"
+  ],
+  "location.uk_non_metropolitan_district": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "location.uk_statistical_location"
+  ],
+  "business.advertising_slogan": [],
+  "bicycles.bicycle_model": [
+    "business.consumer_product"
+  ],
+  "theater.theatrical_orchestrator": [
+    "people.person",
+    "award.award_nominee",
+    "music.artist"
+  ],
+  "theater.theater_genre": [
+    "media_common.media_genre"
+  ],
+  "medicine.artery": [
+    "medicine.anatomical_structure"
+  ],
+  "computer.programming_language_designer": [
+    "people.person"
+  ],
+  "music.compositional_form": [],
+  "internet.top_level_domain_sponsor": [],
+  "fashion.fashion_label": [],
+  "olympics.olympic_participating_country": [
+    "location.location",
+    "location.statistical_region",
+    "location.dated_location",
+    "location.country",
+    "government.governmental_jurisdiction",
+    "book.book_subject",
+    "symbols.flag_referent",
+    "sports.sports_team_location",
+    "organization.organization_member",
+    "organization.organization_scope",
+    "periodicals.newspaper_circulation_area",
+    "travel.travel_destination"
+  ],
+  "games.game_publisher": [
+    "organization.organization",
+    "business.business_operation",
+    "business.employer"
+  ],
+  "tv.tv_crew_role": [
+    "film.film_job"
+  ],
+  "tv.tv_location": [
+    "location.location"
+  ],
+  "baseball.baseball_league": [
+    "business.employer",
+    "organization.organization",
+    "sports.sports_league"
+  ],
+  "theater.theater_production_staff_role": [],
+  "biology.breed_coloring": [
+    "book.book_subject"
+  ],
+  "symbols.coat_of_arms_bearer": [
+    "people.family"
+  ],
+  "computer.computer_emulator": [
+    "computer.software"
+  ],
+  "radio.radio_program_episode": [],
+  "people.group": [],
+  "royalty.kingdom": [
+    "location.location",
+    "location.dated_location",
+    "location.statistical_region",
+    "location.country"
+  ],
+  "award.recurring_award_ceremony": [
+    "time.recurring_event"
+  ],
+  "cvg.musical_game": [
+    "cvg.computer_videogame"
+  ],
+  "geology.rock_type": [],
+  "book.serialized_work": [
+    "book.written_work",
+    "book.book"
+  ],
+  "book.reviewed_work": [
+    "book.written_work"
+  ],
+  "astronomy.near_earth_object": [
+    "astronomy.astronomical_discovery",
+    "astronomy.orbital_relationship",
+    "astronomy.celestial_object",
+    "astronomy.star_system_body",
+    "astronomy.asteroid"
+  ],
+  "cvg.computer_game_expansion": [
+    "cvg.computer_videogame"
+  ],
+  "comic_books.comic_book_publisher": [
+    "organization.organization",
+    "business.employer",
+    "business.business_operation"
+  ],
+  "food.diet_follower": [
+    "people.person",
+    "film.actor",
+    "film.person_or_entity_appearing_in_film",
+    "music.artist",
+    "tv.tv_actor",
+    "award.award_nominee"
+  ],
+  "people.canadian_aboriginal_group": [
+    "people.ethnicity"
+  ],
+  "internet.top_level_domain_registry": [],
+  "visual_art.art_series": [],
+  "astronomy.moon": [
+    "astronomy.orbital_relationship",
+    "astronomy.celestial_object",
+    "astronomy.star_system_body",
+    "astronomy.astronomical_discovery"
+  ],
+  "rail.electric_locomotive_class": [
+    "rail.locomotive_class"
+  ],
+  "computer.computing_platform": [],
+  "location.id_regency": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "kp_lw.philosopher": [
+    "kp_lw.common.topic",
+    "people.person",
+    "book.author",
+    "people.deceased_person"
+  ],
+  "religion.religious_practice": [],
+  "wine.wine_region": [
+    "location.location"
+  ],
+  "medicine.nerve": [
+    "medicine.anatomical_structure"
+  ],
+  "music.conducted_ensemble": [
+    "music.musical_group",
+    "music.artist",
+    "music.orchestra"
+  ],
+  "biology.fossil_site": [
+    "location.location"
+  ],
+  "opera.opera_house": [
+    "architecture.venue",
+    "location.location",
+    "architecture.structure",
+    "architecture.building",
+    "projects.project_focus"
+  ],
+  "biology.hybrid_parent_classification": [
+    "biology.organism_classification"
+  ],
+  "exhibitions.exhibition_producer": [],
+  "people.american_indian_group": [
+    "people.ethnicity"
+  ],
+  "fictional_universe.medical_condition_in_fiction": [
+    "medicine.disease"
+  ],
+  "cricket.cricket_team": [
+    "sports.sports_team",
+    "organization.organization"
+  ],
+  "architecture.architectural_contractor": [
+    "projects.project_participant"
+  ],
+  "cvg.computer_game_subject": [],
+  "engineering.reaction_engine": [
+    "projects.project_focus",
+    "engineering.engine",
+    "aviation.aircraft_engine_type"
+  ],
+  "meteorology.cyclone_affected_area": [
+    "location.location",
+    "location.statistical_region",
+    "location.dated_location",
+    "book.book_subject",
+    "government.governmental_jurisdiction",
+    "organization.organization_scope"
+  ],
+  "fictional_universe.fictional_universe_creator": [
+    "people.person",
+    "book.author",
+    "fictional_universe.fictional_character_creator",
+    "award.award_nominee"
+  ],
+  "fictional_universe.school_in_fiction": [],
+  "conferences.conference_venue": [
+    "location.location",
+    "projects.project_focus",
+    "architecture.structure",
+    "architecture.building"
+  ],
+  "award.award_nomination_announcement": [
+    "time.event"
+  ],
+  "film.film_song": [
+    "music.composition"
+  ],
+  "award.award_judge": [
+    "people.person"
+  ],
+  "medicine.medical_specialty": [
+    "book.book_subject"
+  ],
+  "medicine.disease_stage": [],
+  "music.concert": [
+    "time.event"
+  ],
+  "internet.protocol": [
+    "computer.internet_protocol"
+  ],
+  "astronomy.star_system": [
+    "astronomy.celestial_object"
+  ],
+  "fictional_universe.ethnicity_in_fiction": [
+    "people.ethnicity"
+  ],
+  "government.parliamentary_election": [
+    "time.event",
+    "government.general_election",
+    "government.election"
+  ],
+  "law.constitution": [],
+  "computer.software_license": [],
+  "sports.tournament_event": [],
+  "architecture.engineer": [
+    "people.person",
+    "projects.project_participant",
+    "people.deceased_person"
+  ],
+  "media_common.dedicator": [
+    "people.person",
+    "book.author",
+    "people.deceased_person",
+    "music.artist",
+    "music.group_member",
+    "influence.influence_node",
+    "music.composer"
+  ],
+  "event.speech_topic": [],
+  "radio.radio_subject": [
+    "book.book_subject"
+  ],
+  "book.newspaper_issue": [
+    "book.publication"
+  ],
+  "biology.breed_temperament": [
+    "book.book_subject"
+  ],
+  "rail.railway_terminus": [
+    "location.location",
+    "metropolitan_transit.transit_stop"
+  ],
+  "government.government_issued_permit": [],
+  "sports.sports_equipment": [
+    "business.product_category"
+  ],
+  "business.market_index": [],
+  "food.beer_style": [],
+  "amusement_parks.ride_theme": [],
+  "law.litigant": [
+    "people.person"
+  ],
+  "medicine.drug_mechanism_of_action": [],
+  "interests.hobbyist": [
+    "people.person"
+  ],
+  "boats.ship_designer": [
+    "people.person"
+  ],
+  "education.student_organization": [
+    "organization.organization"
+  ],
+  "music.musical_instrument_company": [
+    "organization.organization",
+    "business.business_operation",
+    "business.employer"
+  ],
+  "film.film_critic": [
+    "people.person",
+    "book.author"
+  ],
+  "spaceflight.rocket_engine": [
+    "spaceflight.bipropellant_rocket_engine"
+  ],
+  "soccer.football_referee": [
+    "people.person"
+  ],
+  "royalty.system_of_nobility": [
+    "location.location"
+  ],
+  "book.cited_work": [
+    "book.written_work"
+  ],
+  "food.nutrient": [
+    "chemistry.chemical_compound"
+  ],
+  "medicine.cancer_center_constituent": [
+    "business.employer",
+    "organization.organization",
+    "location.location"
+  ],
+  "location.hud_mfa": [
+    "location.us_cbsa",
+    "location.location",
+    "location.hud_section_8_area"
+  ],
+  "broadcast.distributor": [
+    "organization.organization"
+  ],
+  "architecture.engineering_firm": [
+    "business.employer",
+    "business.business_operation",
+    "organization.organization",
+    "projects.project_participant"
+  ],
+  "travel.accommodation_feature": [],
+  "dataworld.mass_data_load": [
+    "dataworld.mass_data_operation"
+  ],
+  "travel.hotel_operator": [
+    "business.business_operation",
+    "business.employer",
+    "organization.organization"
+  ],
+  "soccer.football_pitch": [
+    "projects.project_focus",
+    "location.location",
+    "architecture.structure",
+    "sports.sports_facility",
+    "architecture.venue"
+  ],
+  "food.culinary_tool": [
+    "business.product_category"
+  ],
+  "spaceflight.bipropellant_rocket_engine": [
+    "spaceflight.rocket_engine"
+  ],
+  "visual_art.visual_art_genre": [],
+  "food.candy_bar": [
+    "food.food"
+  ],
+  "sports.fight_song": [
+    "music.composition"
+  ],
+  "religion.belief": [],
+  "music.synthesizer": [
+    "business.consumer_product"
+  ],
+  "award.award_achievement_level": [],
+  "tennis.tennis_tournament": [
+    "time.recurring_event"
+  ],
+  "government.political_ideology": [],
+  "chemistry.chemical_element": [
+    "medicine.drug_ingredient"
+  ],
+  "astronomy.meteorite": [],
+  "olympics.olympic_sport": [
+    "sports.sport"
+  ],
+  "medicine.vein": [
+    "medicine.anatomical_structure"
+  ],
+  "fashion.textile": [],
+  "medicine.drug_dosage_form": [],
+  "computer.computer_manufacturer_brand": [
+    "organization.organization",
+    "business.business_operation",
+    "business.employer"
+  ],
+  "book.magazine_genre": [
+    "media_common.media_genre"
+  ],
+  "dataworld.user_reversion_operation": [
+    "dataworld.mass_data_operation"
+  ],
+  "music.performance_venue": [
+    "location.location",
+    "architecture.venue",
+    "projects.project_focus",
+    "architecture.structure",
+    "architecture.building"
+  ],
+  "cvg.computer_game_compilation": [
+    "cvg.computer_videogame"
+  ],
+  "people.professional_field": [
+    "book.book_subject"
+  ],
+  "location.us_indian_reservation": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "royalty.chivalric_title": [],
+  "conferences.conference_subject": [
+    "book.book_subject"
+  ],
+  "business.product_theme": [],
+  "food.wine_style": [],
+  "music.music_video_character": [],
+  "computer.operating_system_developer": [],
+  "amusement_parks.disney_ride": [
+    "amusement_parks.ride"
+  ],
+  "cvg.computer_game_rating": [],
+  "education.grade_level": [],
+  "media_common.quotation_addressee": [
+    "fictional_universe.fictional_character",
+    "book.book_character"
+  ],
+  "education.school_magazine": [
+    "book.periodical",
+    "book.magazine"
+  ],
+  "geology.geological_formation": [
+    "geography.geographical_feature",
+    "location.location"
+  ],
+  "measurement_unit.measuring_instrument": [],
+  "location.it_comune": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.citytown",
+    "location.location",
+    "location.capital_of_administrative_division"
+  ],
+  "fictional_universe.fictional_organization_founder": [
+    "fictional_universe.fictional_character"
+  ],
+  "soccer.football_award": [],
+  "aviation.aircraft": [
+    "business.asset"
+  ],
+  "conferences.conference_sponsor": [
+    "organization.organization",
+    "business.employer"
+  ],
+  "fictional_universe.fictional_organization_type": [],
+  "location.cn_autonomous_county": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "opera.opera_director": [
+    "people.person"
+  ],
+  "games.game_genre": [
+    "media_common.media_genre"
+  ],
+  "cricket.cricket_administrative_body": [
+    "business.employer",
+    "organization.organization",
+    "sports.sports_league"
+  ],
+  "comic_books.comic_book_inker": [
+    "people.person",
+    "comic_books.comic_book_penciler",
+    "fictional_universe.fictional_character_creator"
+  ],
+  "film.film_song_performer": [
+    "music.artist",
+    "people.person"
+  ],
+  "comic_books.comic_book_penciler": [
+    "people.person",
+    "comic_books.comic_book_inker",
+    "fictional_universe.fictional_character_creator",
+    "book.author"
+  ],
+  "computer.computer_peripheral": [
+    "business.consumer_product"
+  ],
+  "tv.tv_song": [
+    "music.composition"
+  ],
+  "astronomy.telescope": [],
+  "astronomy.nebula": [
+    "astronomy.celestial_object"
+  ],
+  "biology.breed_origin": [
+    "location.location",
+    "location.statistical_region",
+    "location.dated_location",
+    "book.book_subject",
+    "organization.organization_scope",
+    "symbols.flag_referent",
+    "government.governmental_jurisdiction",
+    "location.country",
+    "olympics.olympic_participating_country",
+    "sports.sports_team_location",
+    "organization.organization_member",
+    "periodicals.newspaper_circulation_area",
+    "travel.travel_destination"
+  ],
+  "location.de_urban_district": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.citytown",
+    "location.location",
+    "location.de_city",
+    "location.administrative_division"
+  ],
+  "astronomy.celestial_object_category": [],
+  "media_common.unfinished_work": [],
+  "food.beer_country_region": [
+    "location.location",
+    "location.statistical_region",
+    "location.dated_location",
+    "government.governmental_jurisdiction",
+    "sports.sports_team_location",
+    "organization.organization_scope",
+    "book.book_subject",
+    "symbols.flag_referent",
+    "location.country",
+    "periodicals.newspaper_circulation_area",
+    "olympics.olympic_participating_country",
+    "organization.organization_member",
+    "travel.travel_destination"
+  ],
+  "religion.founding_figure": [
+    "people.person",
+    "people.deceased_person",
+    "book.author"
+  ],
+  "measurement_unit.dimension": [],
+  "location.it_frazione": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.location",
+    "location.citytown"
+  ],
+  "location.it_province": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "broadcast.radio_format": [
+    "music.genre"
+  ],
+  "fictional_universe.type_of_fictional_setting": [],
+  "location.fr_department": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "fictional_universe.fictional_language": [],
+  "rail.railway_operator": [
+    "organization.organization",
+    "business.business_operation",
+    "business.employer"
+  ],
+  "internet.api": [],
+  "dataworld.software_tool": [],
+  "government.form_of_government": [],
+  "sports.sport_country": [
+    "symbols.flag_referent",
+    "location.dated_location",
+    "location.statistical_region",
+    "location.country",
+    "book.book_subject",
+    "government.governmental_jurisdiction",
+    "location.location",
+    "olympics.olympic_participating_country",
+    "sports.sports_team_location",
+    "organization.organization_member",
+    "organization.organization_scope",
+    "periodicals.newspaper_circulation_area",
+    "travel.travel_destination"
+  ],
+  "law.legal_subject": [],
+  "aviation.airport_operator": [
+    "organization.organization",
+    "business.employer",
+    "business.business_operation"
+  ],
+  "media_common.lost_work": [],
+  "people.appointer": [
+    "people.person",
+    "government.politician",
+    "government.political_appointer"
+  ],
+  "business.product_endorser": [
+    "people.person",
+    "film.actor",
+    "award.award_winner",
+    "award.award_nominee",
+    "tv.tv_actor",
+    "film.person_or_entity_appearing_in_film"
+  ],
+  "education.university_system": [
+    "organization.organization",
+    "business.employer"
+  ],
+  "theater.theater_designer_role": [],
+  "protected_sites.natural_or_cultural_site_designation": [],
+  "metropolitan_transit.transit_service_type": [],
+  "spaceflight.satellite_manufacturer": [
+    "business.business_operation",
+    "organization.organization",
+    "business.employer"
+  ],
+  "comic_books.comic_book_genre": [
+    "media_common.media_genre",
+    "book.book_subject",
+    "media_common.literary_genre",
+    "film.film_genre",
+    "tv.tv_genre"
+  ],
+  "book.poetic_verse_form": [],
+  "distilled_spirits.distillery": [
+    "business.business_operation",
+    "business.employer",
+    "organization.organization"
+  ],
+  "organization.australian_organization": [
+    "organization.organization",
+    "business.business_operation",
+    "business.employer"
+  ],
+  "organization.club": [
+    "organization.organization"
+  ],
+  "astronomy.constellation": [],
+  "opera.opera_producer": [
+    "people.person",
+    "award.award_nominee",
+    "theater.theater_producer",
+    "award.award_winner"
+  ],
+  "broadcast.radio_network": [
+    "organization.organization",
+    "business.employer"
+  ],
+  "location.id_city": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.citytown",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "time.calendar": [],
+  "organization.club_interest": [],
+  "automotive.platform": [],
+  "food.tea": [
+    "food.beverage"
+  ],
+  "olympics.olympic_games": [
+    "time.event",
+    "book.book_subject"
+  ],
+  "royalty.noble_rank": [],
+  "travel.tour_operator": [],
+  "time.month": [],
+  "atom.feed": [],
+  "language.conlang": [
+    "language.human_language"
+  ],
+  "architecture.type_of_museum": [],
+  "comic_books.comic_book_writer": [
+    "people.person",
+    "book.author",
+    "comic_books.comic_book_creator",
+    "fictional_universe.fictional_character_creator"
+  ],
+  "spaceflight.rocket_launch_site": [
+    "location.location"
+  ],
+  "soccer.fifa": [
+    "organization.organization"
+  ],
+  "travel.accommodation_type": [],
+  "amusement_parks.ride_type": [],
+  "event.disaster_type": [],
+  "automotive.engine_type": [],
+  "automotive.automotive_class": [],
+  "medicine.cranial_nerve": [
+    "medicine.anatomical_structure",
+    "medicine.nerve"
+  ],
+  "astronomy.meteor_shower": [],
+  "business.shopping_center_owner": [
+    "business.business_operation",
+    "business.employer",
+    "organization.organization"
+  ],
+  "geography.mountain_type": [],
+  "bicycles.bicycle_manufacturer": [
+    "organization.organization",
+    "business.business_operation",
+    "business.employer"
+  ],
+  "rail.steam_locomotive_wheel_configuration": [],
+  "medicine.drug_physiologic_effect": [],
+  "cricket.cricket_stadium": [
+    "sports.sports_facility",
+    "projects.project_focus",
+    "architecture.venue",
+    "location.location",
+    "architecture.structure"
+  ],
+  "computer.programming_language_developer": [
+    "people.person"
+  ],
+  "automotive.manufacturing_plant": [
+    "projects.project_focus",
+    "location.location",
+    "architecture.structure"
+  ],
+  "law.court_jurisdiction_area": [
+    "location.location",
+    "location.dated_location",
+    "location.statistical_region",
+    "government.governmental_jurisdiction",
+    "periodicals.newspaper_circulation_area",
+    "organization.organization_scope",
+    "location.administrative_division",
+    "book.book_subject",
+    "symbols.flag_referent",
+    "film.film_location",
+    "travel.travel_destination"
+  ],
+  "architecture.landscape_project": [
+    "location.location"
+  ],
+  "location.pr_municipality": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "location.us_county",
+    "location.hud_foreclosure_area",
+    "location.citytown"
+  ],
+  "government.government_service": [],
+  "fictional_universe.fictional_date_time": [],
+  "transportation.bridge_type": [],
+  "book.editor_title": [
+    "business.job_title"
+  ],
+  "law.judicial_title": [],
+  "opera.opera_genre": [],
+  "location.kp_city": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.citytown",
+    "location.location",
+    "location.administrative_division",
+    "travel.travel_destination"
+  ],
+  "food.recipe": [],
+  "award.ranked_list_compiler": [],
+  "amusement_parks.ride_designer": [
+    "organization.organization",
+    "business.employer",
+    "business.business_operation"
+  ],
+  "astronomy.astronomical_survey_project_organization": [
+    "organization.organization"
+  ],
+  "location.es_comarca": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "distilled_spirits.infused_spirit": [],
+  "measurement_unit.distance_unit": [
+    "time_series.unit"
+  ],
+  "protected_sites.site_listing_category": [],
+  "medicine.hormone": [],
+  "astronomy.supernova": [
+    "astronomy.celestial_object"
+  ],
+  "comic_strips.comic_strip_genre": [
+    "media_common.media_genre"
+  ],
+  "award.competition_type": [],
+  "medicine.drug_administration_route": [],
+  "biology.fossil_specimen": [],
+  "amusement_parks.ride_manufacturer": [
+    "business.employer",
+    "organization.organization",
+    "business.business_operation"
+  ],
+  "chemistry.element_discoverer": [
+    "people.person",
+    "people.deceased_person",
+    "influence.influence_node",
+    "education.academic"
+  ],
+  "biology.informal_biological_grouping": [],
+  "book.technical_report": [
+    "book.written_work",
+    "book.scholarly_work"
+  ],
+  "fictional_universe.fictional_creature": [],
+  "computer.web_browser": [
+    "computer.software"
+  ],
+  "medicine.cancer_center": [
+    "organization.organization"
+  ],
+  "medicine.bone": [
+    "medicine.anatomical_structure"
+  ],
+  "film.film_format": [],
+  "comic_books.comic_book_colorist": [
+    "people.person"
+  ],
+  "imdb.topic": [
+    "people.person"
+  ],
+  "automotive.designer": [
+    "people.person",
+    "people.deceased_person"
+  ],
+  "biology.domesticated_animal": [
+    "biology.organism_classification",
+    "biology.animal"
+  ],
+  "event.disaster_affected_structure": [
+    "projects.project_focus",
+    "location.location",
+    "architecture.structure"
+  ],
+  "rail.diesel_locomotive_class": [
+    "rail.locomotive_class"
+  ],
+  "military.military_unit_place_of_origin": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.location",
+    "book.book_subject",
+    "government.governmental_jurisdiction",
+    "symbols.flag_referent",
+    "organization.organization_scope",
+    "periodicals.newspaper_circulation_area",
+    "location.administrative_division",
+    "government.political_district",
+    "location.us_state"
+  ],
+  "fictional_universe.fictional_substance": [],
+  "computer.file_format_genre": [],
+  "dataworld.data_provider": [
+    "organization.organization"
+  ],
+  "location.uk_unitary_authority": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.location",
+    "location.administrative_division",
+    "location.uk_statistical_location"
+  ],
+  "computer.programming_language_paradigm": [],
+  "business.endorsed_product": [
+    "business.consumer_product"
+  ],
+  "engineering.battery_cell_type": [],
+  "american_football.football_conference": [
+    "business.employer",
+    "organization.organization",
+    "sports.sports_league"
+  ],
+  "exhibitions.exhibition_curator": [
+    "people.person"
+  ],
+  "wine.wine_sub_region": [
+    "location.location",
+    "location.statistical_region",
+    "location.dated_location"
+  ],
+  "computer.computer_peripheral_class": [],
+  "location.vn_province": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "book.series_editor": [
+    "people.person",
+    "book.author"
+  ],
+  "sports.coaching_position": [],
+  "transportation.highway_system": [],
+  "food.type_of_dish": [],
+  "event.type_of_public_presentation": [],
+  "exhibitions.type_of_exhibition": [],
+  "medicine.ligament": [
+    "medicine.anatomical_structure"
+  ],
+  "music.musical_chord": [],
+  "skiing.ski_run": [],
+  "architecture.architecture_firm_partners": [
+    "people.person",
+    "architecture.architect"
+  ],
+  "film.film_festival_focus": [
+    "media_common.media_genre",
+    "film.film_genre",
+    "book.book_subject",
+    "tv.tv_genre",
+    "film.film_subject"
+  ],
+  "protected_sites.governing_body_of_protected_sites": [
+    "organization.organization"
+  ],
+  "amusement_parks.amusement_park_area": [
+    "location.location"
+  ],
+  "engineering.engine_category": [
+    "law.invention"
+  ],
+  "atom.feed_person": [],
+  "skiing.ski_lift": [],
+  "business.product_endorsee": [
+    "business.employer",
+    "organization.organization",
+    "business.business_operation",
+    "business.sponsor"
+  ],
+  "computer.processor_manufacturer": [
+    "business.business_operation",
+    "organization.organization",
+    "business.employer",
+    "business.issuer",
+    "award.ranked_item"
+  ],
+  "business.product_ingredient": [],
+  "film.film_company_role_or_service": [],
+  "royalty.chivalric_order_officer": [
+    "people.person",
+    "royalty.chivalric_order_member",
+    "royalty.noble_person",
+    "people.deceased_person"
+  ],
+  "tv.tv_song_performer": [
+    "music.artist",
+    "people.person",
+    "music.group_member"
+  ],
+  "measurement_unit.common_dimension": [
+    "measurement_unit.dimension"
+  ],
+  "cvg.computer_game_content_descriptor": [],
+  "location.in_division": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "travel.transportation_mode": [],
+  "medicine.drug_dosage_flavor": [
+    "food.food",
+    "food.ingredient",
+    "medicine.drug_ingredient"
+  ],
+  "location.us_state": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "symbols.flag_referent",
+    "government.political_district",
+    "book.book_subject",
+    "organization.organization_scope",
+    "government.governmental_jurisdiction",
+    "periodicals.newspaper_circulation_area",
+    "military.military_unit_place_of_origin"
+  ],
+  "film.content_rating_system": [
+    "organization.organization"
+  ],
+  "visual_art.visual_art_form": [],
+  "book.interviewer": [
+    "people.person"
+  ],
+  "measurement_unit.volume_unit": [
+    "time_series.unit",
+    "food.culinary_measure"
+  ],
+  "martial_arts.martial_arts_organization": [],
+  "food.culinary_measure": [
+    "time_series.unit",
+    "measurement_unit.volume_unit"
+  ],
+  "travel.guidebook": [
+    "book.written_work",
+    "book.book"
+  ],
+  "religion.prayer": [],
+  "location.es_province": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "book.report_issuing_institution": [
+    "organization.organization",
+    "business.employer"
+  ],
+  "celebrities.reason_for_arrest": [],
+  "government.polling_authority": [
+    "organization.organization",
+    "business.employer"
+  ],
+  "religion.type_of_place_of_worship": [],
+  "biology.organism_classification_rank": [],
+  "meteorology.cloud": [],
+  "government.us_vice_president": [
+    "government.politician",
+    "people.person",
+    "government.u_s_congressperson",
+    "people.deceased_person",
+    "book.author"
+  ],
+  "american_football.super_bowl": [
+    "time.event",
+    "sports.sports_championship_event",
+    "book.book_subject"
+  ],
+  "soccer.football_league_system": [],
+  "comic_books.comic_book_letterer": [
+    "people.person"
+  ],
+  "book.book_binding": [],
+  "location.jp_prefecture": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "computer.computer_designer": [
+    "people.person"
+  ],
+  "cvg.computer_game_engine_developer": [
+    "organization.organization",
+    "business.business_operation",
+    "business.employer",
+    "cvg.cvg_developer",
+    "cvg.cvg_publisher"
+  ],
+  "time.holiday_category": [],
+  "travel.hotel_brand_owner": [
+    "organization.organization",
+    "business.business_operation",
+    "business.employer"
+  ],
+  "location.offical_symbol_variety": [],
+  "location.id_subdistrict": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.location",
+    "location.administrative_division"
+  ],
+  "computer.protocol_provider": [
+    "computer.internet_protocol",
+    "internet.protocol"
+  ],
+  "basketball.basketball_conference": [
+    "business.employer",
+    "organization.organization",
+    "sports.sports_league",
+    "american_football.football_conference"
+  ],
+  "location.in_city": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.citytown",
+    "location.location",
+    "location.capital_of_administrative_division",
+    "periodicals.newspaper_circulation_area",
+    "travel.travel_destination"
+  ],
+  "music.musical_scale": [],
+  "organization.non_profit_designation": [],
+  "book.excerpt": [
+    "book.published_work"
+  ],
+  "people.chinese_ethnic_group": [
+    "people.ethnicity"
+  ],
+  "aviation.aircraft_line": [],
+  "measurement_unit.time_unit": [
+    "time_series.unit"
+  ],
+  "opera.opera_designer": [
+    "people.person",
+    "award.award_nominee",
+    "theater.theater_designer"
+  ],
+  "royalty.chivalric_order_founder": [
+    "people.person",
+    "people.deceased_person",
+    "royalty.noble_person",
+    "royalty.monarch",
+    "people.family_member"
+  ],
+  "measurement_unit.unit_of_frequency": [
+    "time_series.unit"
+  ],
+  "government.us_president": [
+    "government.politician",
+    "book.book_subject",
+    "symbols.name_source",
+    "people.person",
+    "government.political_appointer",
+    "book.author",
+    "people.appointer",
+    "people.deceased_person",
+    "government.u_s_congressperson",
+    "organization.organization_founder",
+    "fictional_universe.person_in_fiction",
+    "military.military_person"
+  ],
+  "measurement_unit.data_size_unit": [
+    "time_series.unit"
+  ],
+  "medicine.medical_device": [],
+  "measurement_unit.measurement_system": [],
+  "olympics.olympic_host_city": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.citytown",
+    "location.location",
+    "travel.travel_destination",
+    "film.film_location",
+    "periodicals.newspaper_circulation_area",
+    "government.governmental_jurisdiction",
+    "location.administrative_division",
+    "sports.sports_team_location",
+    "organization.organization_scope"
+  ],
+  "comic_books.comic_book_editor": [
+    "people.person"
+  ],
+  "comedy.comedian": [
+    "people.person",
+    "film.actor",
+    "tv.tv_actor",
+    "music.artist"
+  ],
+  "music.music_video_choreographer": [
+    "people.person",
+    "award.award_nominee",
+    "film.actor",
+    "award.award_winner"
+  ],
+  "biology.plant_disease_cause": [
+    "biology.organism_classification"
+  ],
+  "meteorology.tropical_cyclone_category": [],
+  "medicine.medical_trial": [],
+  "music.media_format": [],
+  "tv.sequence_of_tv_episode_segments": [],
+  "geography.mountain_listing": [],
+  "comic_books.comic_book_story_arc": [],
+  "business.company_type": [
+    "organization.organization_type"
+  ],
+  "physics.particle": [],
+  "book.audio_book_reader": [
+    "people.person",
+    "film.actor",
+    "tv.tv_actor",
+    "award.award_winner",
+    "award.award_nominee",
+    "influence.influence_node",
+    "film.person_or_entity_appearing_in_film"
+  ],
+  "spaceflight.space_program": [],
+  "medicine.fda_otc_monograph_part": [],
+  "music.music_video_crewmember": [
+    "people.person"
+  ],
+  "medicine.biofluid": [],
+  "law.constitutional_amendment": [],
+  "government.government_position_held": [
+    "people.person"
+  ],
+  "martial_arts.martial_arts_qualification": [],
+  "music.live_album": [
+    "music.album"
+  ],
+  "engineering.signal_modulation_mode": [],
+  "digicams.digital_camera_manufacturer": [
+    "business.employer",
+    "business.business_operation",
+    "organization.organization",
+    "business.consumer_company"
+  ],
+  "location.uk_metropolitan_borough": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "location.uk_statistical_location",
+    "location.citytown"
+  ],
+  "medicine.diagnostic_sign": [],
+  "book.interview": [
+    "book.published_work"
+  ],
+  "visual_art.visual_art_support": [
+    "visual_art.visual_art_medium"
+  ],
+  "engineering.channel_access_method": [],
+  "location.uk_non_metropolitan_county": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "location.uk_statistical_location",
+    "government.governmental_jurisdiction",
+    "organization.organization_scope",
+    "periodicals.newspaper_circulation_area"
+  ],
+  "biology.plant_disease": [],
+  "measurement_unit.mass_unit": [
+    "time_series.unit"
+  ],
+  "engineering.piston_configuration": [],
+  "distilled_spirits.distilled_spirit_type": [
+    "food.beverage",
+    "food.food"
+  ],
+  "comic_books.comic_book_fictional_universe": [
+    "fictional_universe.fictional_universe"
+  ],
+  "meteorology.meteorological_service": [
+    "organization.organization"
+  ],
+  "chemistry.chemical_series": [],
+  "medicine.drug_legal_status": [],
+  "spaceflight.rocket_manufacturer": [
+    "business.employer",
+    "organization.organization",
+    "business.business_operation"
+  ],
+  "interests.collection_activity": [
+    "interests.interest",
+    "interests.hobby"
+  ],
+  "location.uk_district": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "location.uk_statistical_location"
+  ],
+  "cvg.computer_game_distribution_system": [],
+  "event.event_producer": [
+    "organization.organization",
+    "business.employer"
+  ],
+  "cvg.computer_game_mod": [
+    "cvg.computer_videogame"
+  ],
+  "metropolitan_transit.transit_vehicle": [],
+  "aviation.icao_airline_designator": [],
+  "aviation.iata_airline_designator": [],
+  "celebrities.abused_substance": [
+    "medicine.medical_treatment",
+    "medicine.drug",
+    "chemistry.chemical_compound"
+  ],
+  "location.id_province": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "royalty.chivalric_rank": [],
+  "astronomy.type_of_planetographic_feature": [],
+  "architecture.lighthouse_construction_material": [],
+  "astronomy.asteroid_family": [],
+  "symbols.heraldic_charge": [],
+  "location.de_regierungsbezirk": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "location.uk_council_area": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "location.uk_statistical_location"
+  ],
+  "location.uk_london_borough": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "location.uk_statistical_location"
+  ],
+  "law.patent_office": [
+    "organization.organization"
+  ],
+  "media_common.completer_of_unfinished_work": [
+    "people.person",
+    "music.composer",
+    "music.artist",
+    "music.writer",
+    "music.group_member",
+    "people.deceased_person"
+  ],
+  "distilled_spirits.blended_spirit": [],
+  "location.mx_state": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "book.financial_support_provider": [
+    "organization.organization",
+    "business.employer"
+  ],
+  "organization.organization_committee_title": [
+    "organization.role"
+  ],
+  "education.education": [
+    "people.person"
+  ],
+  "digicams.camera_iso": [],
+  "computer.content_license": [],
+  "dataworld.data_task": [],
+  "automotive.privately_owned_vehicle": [],
+  "olympics.olympic_bidding_city": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.location",
+    "location.citytown",
+    "periodicals.newspaper_circulation_area",
+    "travel.travel_destination",
+    "government.governmental_jurisdiction",
+    "sports.sports_team_location",
+    "film.film_location",
+    "organization.organization_scope",
+    "location.administrative_division",
+    "location.place_with_neighborhoods",
+    "book.book_subject",
+    "fictional_universe.fictional_setting",
+    "location.capital_of_administrative_division"
+  ],
+  "music.musician_profession": [
+    "people.profession",
+    "book.book_subject"
+  ],
+  "location.cn_autonomous_prefecture": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.citytown",
+    "location.administrative_division",
+    "location.location",
+    "location.cn_prefecture_level_city"
+  ],
+  "music.music_video_genre": [
+    "media_common.media_genre",
+    "music.genre"
+  ],
+  "media_common.media_genre_equivalent_topic": [
+    "book.book_subject"
+  ],
+  "comic_strips.comic_strip_syndicate": [],
+  "location.in_state": [
+    "location.dated_location",
+    "location.statistical_region",
+    "government.governmental_jurisdiction",
+    "location.administrative_division",
+    "location.location",
+    "periodicals.newspaper_circulation_area"
+  ],
+  "soccer.football_world_cup": [
+    "soccer.football_award",
+    "time.event",
+    "sports.sports_championship_event",
+    "book.book_subject"
+  ],
+  "location.us_metropolitan_division": [
+    "location.location"
+  ],
+  "biology.chromosome": [],
+  "organization.organization_relationship": [
+    "organization.organization",
+    "business.employer",
+    "business.business_operation"
+  ],
+  "cricket.cricket_match": [],
+  "award.hall_of_fame_induction_category": [],
+  "travel.hotel_grading_authority": [],
+  "location.tw_district": [
+    "location.location",
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division"
+  ],
+  "food.candy_bar_manufacturer": [
+    "business.business_operation",
+    "organization.organization",
+    "business.employer"
+  ],
+  "film.film_theorist": [
+    "people.person",
+    "book.author",
+    "film.actor",
+    "film.writer",
+    "people.deceased_person"
+  ],
+  "tv.video": [
+    "award.award_nominated_work"
+  ],
+  "fashion.fiber": [],
+  "food.beer_style_category": [],
+  "rail.locomotive_builder": [
+    "organization.organization",
+    "business.business_operation",
+    "business.employer"
+  ],
+  "language.language_creator": [
+    "people.person",
+    "people.deceased_person"
+  ],
+  "cvg.computer_game_rating_system": [
+    "organization.organization"
+  ],
+  "dataworld.attribution_template": [],
+  "food.diet": [],
+  "american_football.football_division": [
+    "business.employer",
+    "organization.organization",
+    "sports.sports_league"
+  ],
+  "ice_hockey.hockey_division": [],
+  "distilled_spirits.spirit_bottler": [
+    "business.business_operation",
+    "business.employer",
+    "organization.organization",
+    "distilled_spirits.distillery"
+  ],
+  "organization.email_contact": [
+    "business.employer",
+    "business.business_location"
+  ],
+  "geography.lake_type": [],
+  "music.music_video_subject": [],
+  "location.fr_region": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "location.region"
+  ],
+  "film.performance": [],
+  "cricket.cricket_delivery_type": [],
+  "royalty.chivalric_office": [],
+  "symbols.heraldic_tincture": [],
+  "protected_sites.park_system": [],
+  "cricket.cricket_tournament_event": [
+    "time.event",
+    "sports.sports_championship_event"
+  ],
+  "astronomy.spectral_type": [],
+  "location.ca_indian_reserve": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "military.military_resource": [],
+  "law.patent_assignee": [
+    "organization.organization",
+    "business.employer",
+    "business.business_operation"
+  ],
+  "location.br_state": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "government.governmental_jurisdiction"
+  ],
+  "fashion.weave": [],
+  "dataworld.attribution_namespace": [],
+  "biology.organism_part": [
+    "food.ingredient",
+    "food.food"
+  ],
+  "chemistry.particle_spin": [],
+  "business.company_termination_type": [],
+  "baseball.baseball_position": [
+    "sports.sports_position"
+  ],
+  "astronomy.asteroid_group": [],
+  "biology.plant_disease_host": [
+    "biology.organism_classification"
+  ],
+  "aviation.accident_type": [],
+  "spaceflight.rocket_fuel": [],
+  "rail.steam_locomotive_class": [
+    "rail.locomotive_class"
+  ],
+  "astronomy.meteoric_composition": [],
+  "venture_capital.investment_round": [],
+  "location.ua_oblast": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "biology.amino_acid": [
+    "chemistry.chemical_compound",
+    "medicine.drug_ingredient",
+    "food.nutrient"
+  ],
+  "broadcast.tv_terrestrial_broadcast_facility": [
+    "broadcast.distributor",
+    "broadcast.tv_station",
+    "broadcast.broadcast",
+    "location.location",
+    "business.employer",
+    "organization.organization"
+  ],
+  "skiing.ski_area_owner": [
+    "organization.organization",
+    "business.business_operation",
+    "business.employer"
+  ],
+  "medicine.medical_trial_sponsor": [
+    "organization.organization",
+    "business.employer"
+  ],
+  "location.mailing_address": [
+    "location.location"
+  ],
+  "protected_sites.natural_or_cultural_preservation_agency": [
+    "organization.organization"
+  ],
+  "military.military_unit_size": [],
+  "government.indirect_election": [
+    "time.event",
+    "government.election"
+  ],
+  "location.ar_province": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "location.uk_principal_area": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "location.uk_statistical_location",
+    "government.governmental_jurisdiction"
+  ],
+  "soccer.football_position": [
+    "sports.sports_position"
+  ],
+  "location.cn_province": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "location.jp_special_ward": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.citytown",
+    "location.location",
+    "location.administrative_division"
+  ],
+  "cvg.computer_game_region": [
+    "location.location",
+    "organization.organization_scope"
+  ],
+  "government.legislative_committee_title": [],
+  "food.bottled_water": [],
+  "fictional_universe.fictional_object_destruction_method": [],
+  "time.holiday_period": [],
+  "people.place_lived": [],
+  "religion.religious_leadership_role": [],
+  "tv.non_character_role": [],
+  "olympics.olympic_mascot": [
+    "sports.mascot"
+  ],
+  "meteorology.forecast_zone": [
+    "location.location"
+  ],
+  "fictional_universe.fictional_object_destroyer": [
+    "fictional_universe.fictional_character",
+    "book.book_character"
+  ],
+  "religion.adherents": [],
+  "olympics.olympic_torchbearer": [
+    "people.person",
+    "people.measured_person",
+    "sports.pro_athlete"
+  ],
+  "sports.tournament_team": [
+    "sports.sports_team"
+  ],
+  "music.music_video_job": [
+    "film.film_job",
+    "people.profession"
+  ],
+  "kp_lw.philosophy_influencer": [
+    "kp_lw.common.topic",
+    "people.person",
+    "people.deceased_person",
+    "influence.influence_node",
+    "book.author"
+  ],
+  "distilled_spirits.spirit_producing_region": [
+    "location.location",
+    "location.statistical_region",
+    "location.dated_location"
+  ],
+  "location.vn_provincial_city": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.citytown",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "military.military_service": [],
+  "bicycles.bicycle_type": [
+    "business.product_category"
+  ],
+  "food.beer_container": [],
+  "architecture.landscape_architect": [
+    "people.person",
+    "people.deceased_person"
+  ],
+  "location.it_region": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "location.region",
+    "organization.organization_scope"
+  ],
+  "kp_lw.wine_grape_variety": [
+    "biology.organism_classification",
+    "wine.grape_variety"
+  ],
+  "broadcast.fm_terrestrial_broadcast_facility": [
+    "broadcast.distributor",
+    "location.location",
+    "broadcast.broadcast",
+    "broadcast.radio_station"
+  ],
+  "sports.team_rivalry": [],
+  "architecture.light_characteristic": [],
+  "internet.top_level_domain_status": [],
+  "digicams.camera_storage_type": [],
+  "opera.opera_recording": [],
+  "baseball.baseball_coaching_position": [
+    "sports.coaching_position"
+  ],
+  "sports.boxing_weight_division": [],
+  "ice_hockey.hockey_conference": [
+    "business.employer",
+    "organization.organization",
+    "sports.sports_league"
+  ],
+  "computer.web_browser_extension": [
+    "computer.software"
+  ],
+  "internet.website_ownership": [
+    "organization.organization",
+    "business.business_operation",
+    "business.employer"
+  ],
+  "automotive.transmission": [],
+  "chemistry.chemical_bond": [],
+  "music.musical_tribute_act": [
+    "music.artist"
+  ],
+  "medicine.vaccine": [
+    "medicine.medical_treatment",
+    "medicine.drug",
+    "medicine.condition_prevention_factors"
+  ],
+  "american_football.football_coach_position": [
+    "sports.coaching_position",
+    "sports.sports_official",
+    "people.person"
+  ],
+  "measurement_unit.pressure_unit": [
+    "time_series.unit"
+  ],
+  "conferences.type_of_conference": [],
+  "astronomy.asteroid_spectral_type": [],
+  "book.poetic_meter": [],
+  "olympics.olympic_torch_relay_location": [
+    "location.location",
+    "location.dated_location",
+    "location.statistical_region",
+    "location.citytown",
+    "location.administrative_division",
+    "location.uk_statistical_location"
+  ],
+  "location.hk_district": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "business.open_times": [
+    "business.employer",
+    "organization.organization",
+    "business.business_operation"
+  ],
+  "location.de_borough": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "measurement_unit.energy_unit": [
+    "time_series.unit"
+  ],
+  "location.ru_republic": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "boats.means_of_propulsion": [],
+  "olympics.olympic_demonstration_competition": [
+    "time.event",
+    "book.book_subject"
+  ],
+  "cricket.cricket_tournament": [
+    "time.recurring_event",
+    "sports.sports_championship"
+  ],
+  "computer.computer_product_line": [
+    "business.product_line"
+  ],
+  "location.jp_designated_city": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.citytown",
+    "location.location",
+    "location.jp_city_town",
+    "location.capital_of_administrative_division",
+    "location.administrative_division",
+    "travel.travel_destination"
+  ],
+  "location.vn_urban_district": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "distilled_spirits.spirit_blender": [
+    "business.business_operation",
+    "business.employer",
+    "organization.organization"
+  ],
+  "location.es_autonomous_community": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "food.recipe_collection": [],
+  "chess.chess_game": [],
+  "medicine.vector_of_disease": [
+    "biology.organism_classification"
+  ],
+  "automotive.body_style": [
+    "automotive.automotive_class",
+    "business.product_category"
+  ],
+  "medicine.drug_form_shape": [],
+  "spaceflight.satellite_orbit_type": [],
+  "food.beverage_type": [
+    "food.food",
+    "food.beverage",
+    "food.ingredient"
+  ],
+  "ice_hockey.hockey_position": [
+    "sports.sports_position"
+  ],
+  "medicine.medical_trial_design": [],
+  "spaceflight.rocket_function": [],
+  "distilled_spirits.fermentation_base": [
+    "food.food",
+    "food.ingredient",
+    "biology.organism_classification",
+    "medicine.drug_ingredient",
+    "book.book_subject"
+  ],
+  "basketball.basketball_division": [
+    "business.employer",
+    "organization.organization",
+    "sports.sports_league"
+  ],
+  "spaceflight.space_agency": [
+    "organization.organization",
+    "business.employer",
+    "business.business_operation",
+    "spaceflight.satellite_manufacturer"
+  ],
+  "food.recipe_author": [
+    "people.person"
+  ],
+  "organization.non_profit_registration": [
+    "organization.organization",
+    "business.employer"
+  ],
+  "aviation.airport_terminal": [
+    "location.location"
+  ],
+  "celebrities.supercouple": [],
+  "biology.genome": [],
+  "astronomy.asterism": [],
+  "food.culinary_technique": [],
+  "organization.organization_membership": [],
+  "location.ru_oblast": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "book.excerpted_work": [
+    "book.written_work",
+    "book.book",
+    "book.translated_work"
+  ],
+  "book.interviewee": [
+    "people.person"
+  ],
+  "location.my_division": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "location.citytown"
+  ],
+  "location.de_state": [
+    "location.dated_location",
+    "location.statistical_region",
+    "organization.organization_scope",
+    "government.governmental_jurisdiction",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "meteorology.beaufort_wind_force": [],
+  "sports.sports_team_season_record": [],
+  "organization.leadership": [
+    "people.person",
+    "business.board_member",
+    "organization.organization_founder"
+  ],
+  "cricket.cricket_bowling_technique": [],
+  "time.day_of_week": [],
+  "fictional_universe.fictional_plant": [],
+  "chemistry.radioactive_decay_mode": [],
+  "architecture.unrealized_design": [
+    "location.location",
+    "projects.project_focus",
+    "architecture.structure"
+  ],
+  "tv.tv_regular_personal_appearance": [
+    "people.person",
+    "award.award_nominee"
+  ],
+  "fictional_universe.fictional_calendar_system": [],
+  "music.voice": [
+    "music.performance_role"
+  ],
+  "location.ar_commune": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "film.film_collection": [],
+  "law.us_patent_category": [],
+  "location.us_territory": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.location",
+    "symbols.flag_referent",
+    "book.book_subject",
+    "government.governmental_jurisdiction",
+    "location.administrative_division"
+  ],
+  "measurement_unit.area_unit": [
+    "time_series.unit"
+  ],
+  "astronomy.telescope_type": [],
+  "medicine.contraindication": [
+    "medicine.disease"
+  ],
+  "astronomy.telescope_platform": [],
+  "engineering.power_plug_standard_type": [],
+  "travel.transportation": [],
+  "people.measured_body_part": [
+    "medicine.anatomical_structure"
+  ],
+  "spaceflight.rocket_engine_fuel": [
+    "spaceflight.rocket_fuel",
+    "chemistry.chemical_compound"
+  ],
+  "martial_arts.martial_art_category": [],
+  "biology.source_organism": [
+    "biology.organism_classification",
+    "book.book_subject"
+  ],
+  "award.hall_of_fame_discipline": [
+    "media_common.media_genre",
+    "film.film_subject",
+    "book.book_subject"
+  ],
+  "celebrities.rehab_facility": [],
+  "spaceflight.space_program_sponsor": [
+    "organization.organization",
+    "business.business_operation",
+    "business.employer"
+  ],
+  "food.drinking_establishment_type": [],
+  "location.uk_overseas_territory": [
+    "location.dated_location",
+    "location.statistical_region",
+    "government.governmental_jurisdiction",
+    "location.administrative_division",
+    "location.location",
+    "location.country",
+    "symbols.flag_referent",
+    "book.book_subject"
+  ],
+  "location.metropolitan_area_anchor": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.location",
+    "location.citytown",
+    "government.governmental_jurisdiction",
+    "travel.travel_destination",
+    "periodicals.newspaper_circulation_area",
+    "location.hud_county_place",
+    "location.hud_foreclosure_area",
+    "sports.sports_team_location",
+    "business.employer",
+    "organization.organization_scope"
+  ],
+  "rail.locomotive_owner": [
+    "business.business_operation",
+    "business.employer",
+    "organization.organization"
+  ],
+  "government.us_presidential_campaign": [
+    "government.election_campaign"
+  ],
+  "baseball.baseball_division": [
+    "business.employer",
+    "organization.organization",
+    "sports.sports_league"
+  ],
+  "digicams.camera_format": [],
+  "skiing.lift_type": [],
+  "fashion.fashion_week": [
+    "time.recurring_event"
+  ],
+  "government.us_vice_presidential_campaign": [
+    "government.election_campaign"
+  ],
+  "measurement_unit.unit_of_data_transmission_rate": [
+    "time_series.unit"
+  ],
+  "boats.boat_disposition": [
+    "boats.ship"
+  ],
+  "tv.tv_rating": [],
+  "film.film_crew_gig": [],
+  "physics.hadron": [
+    "physics.particle"
+  ],
+  "biology.gene_ontology_group_membership_evidence_type": [],
+  "skiing.ski_lift_manufacturer": [
+    "business.business_operation",
+    "organization.organization",
+    "business.employer"
+  ],
+  "aviation.airport_type": [],
+  "biology.breed_group": [
+    "book.book_subject"
+  ],
+  "cvg.input_method": [
+    "business.consumer_product",
+    "computer.computer_peripheral_class",
+    "computer.computer_peripheral"
+  ],
+  "location.my_state": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "government.governmental_jurisdiction",
+    "periodicals.newspaper_circulation_area"
+  ],
+  "comedy.comedy_genre": [
+    "media_common.media_genre",
+    "tv.tv_genre"
+  ],
+  "dataworld.data_task_category": [],
+  "physics.quark": [
+    "physics.particle"
+  ],
+  "measurement_unit.time_interval": [],
+  "astronomy.astronomical_discovery_technique": [],
+  "government.electoral_college": [],
+  "opera.libretto": [],
+  "radio.radio_episode_segment": [],
+  "engineering.battery_size": [],
+  "astronomy.galaxy_classification_code": [],
+  "dataworld.external": [],
+  "travel.guidebook_series": [],
+  "digicams.camera_compressed_format": [],
+  "sports.sports_team_roster": [
+    "people.measured_person",
+    "sports.pro_athlete",
+    "people.person"
+  ],
+  "law.constitutional_amendment_proposer": [
+    "people.person",
+    "government.politician",
+    "people.deceased_person"
+  ],
+  "food.cheese_texture": [],
+  "film.special_film_performance_type": [
+    "tv.special_tv_performance_type"
+  ],
+  "event.produced_event": [
+    "time.event"
+  ],
+  "location.nl_province": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "organization.organization_scope"
+  ],
+  "music.group_membership": [],
+  "architecture.destruction_method": [
+    "event.disaster_type"
+  ],
+  "internet.top_level_domain_type": [],
+  "film.personal_film_appearance": [
+    "people.person",
+    "film.actor"
+  ],
+  "biology.taxonomic_authority": [
+    "organization.organization"
+  ],
+  "astronomy.galactic_group": [
+    "astronomy.celestial_object"
+  ],
+  "astronomy.orbit_type": [],
+  "cricket.dismissal_type": [],
+  "distilled_spirits.blended_spirit_style": [
+    "food.beverage",
+    "food.ingredient"
+  ],
+  "boxing.boxing_decision": [],
+  "medicine.drug_pregnancy_category": [],
+  "cricket.cricket_league": [
+    "business.employer",
+    "organization.organization",
+    "sports.sports_league"
+  ],
+  "cricket.cricket_batting_stroke": [],
+  "royalty.order_of_chivalry_category": [],
+  "engineering.engine_energy_source": [],
+  "book.periodical_format": [],
+  "basketball.basketball_position": [
+    "sports.sports_position"
+  ],
+  "spaceflight.rocket_engine_designer": [
+    "business.business_operation",
+    "business.employer",
+    "organization.organization",
+    "spaceflight.rocket_engine_manufacturer"
+  ],
+  "kp_lw.philosophy_school": [
+    "kp_lw.common.topic",
+    "book.book_subject"
+  ],
+  "spaceflight.mission_destination": [
+    "astronomy.orbital_relationship",
+    "astronomy.celestial_object",
+    "astronomy.star_system_body",
+    "symbols.namesake"
+  ],
+  "comedy.comedy_group": [
+    "people.group",
+    "music.musical_group",
+    "music.artist"
+  ],
+  "rail.rail_network": [],
+  "measurement_unit.power_unit": [
+    "time_series.unit"
+  ],
+  "religion.religious_jurisdiction_class": [],
+  "cricket.cricket_series": [
+    "time.recurring_event"
+  ],
+  "skiing.ski_lodge": [
+    "architecture.building",
+    "projects.project_focus",
+    "location.location",
+    "architecture.structure"
+  ],
+  "event.promoted_event": [
+    "time.event"
+  ],
+  "symbols.heraldic_ordinaire": [],
+  "book.contents": [],
+  "location.province": [
+    "location.dated_location",
+    "location.statistical_region",
+    "government.governmental_jurisdiction",
+    "location.administrative_division",
+    "location.location",
+    "government.political_district",
+    "book.book_subject",
+    "symbols.coat_of_arms_bearer",
+    "organization.organization_scope",
+    "periodicals.newspaper_circulation_area"
+  ],
+  "digicams.camera_uncompressed_format": [],
+  "fashion.fashion_category": [],
+  "symbols.heraldic_supporter": [
+    "biology.organism_classification"
+  ],
+  "film.film_distribution_medium": [
+    "law.invention",
+    "business.consumer_product",
+    "music.media_format"
+  ],
+  "people.wedding_venue": [
+    "location.location",
+    "projects.project_focus",
+    "architecture.structure"
+  ],
+  "location.mx_municipality": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "food.tea_type": [
+    "food.tea",
+    "food.beverage"
+  ],
+  "opera.opera_production_staff": [
+    "people.person",
+    "theater.theater_production_staff"
+  ],
+  "spaceflight.satellite_type": [],
+  "government.poll_respondent_category": [],
+  "tv.special_tv_performance_type": [
+    "film.special_film_performance_type",
+    "music.special_music_video_performance_type"
+  ],
+  "language.language_writing_type": [],
+  "architecture.building_complex_function": [
+    "architecture.building_function"
+  ],
+  "rail.rail_gauge": [],
+  "location.cn_prefecture": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "digicams.camera_image_ratio": [],
+  "symbols.heraldic_brisure": [],
+  "film.film_cut_type": [],
+  "location.uk_region": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "location.uk_statistical_location",
+    "periodicals.newspaper_circulation_area",
+    "government.governmental_jurisdiction"
+  ],
+  "location.continent": [
+    "location.statistical_region",
+    "location.location",
+    "book.book_subject",
+    "organization.organization_scope",
+    "travel.travel_destination",
+    "location.dated_location"
+  ],
+  "people.appointment": [
+    "people.person",
+    "people.appointee"
+  ],
+  "tv.tv_network_duration": [
+    "tv.tv_program"
+  ],
+  "automotive.fuel_delivery_method": [
+    "engineering.fuel_delivery_method"
+  ],
+  "spaceflight.rocket_engine_manufacturer": [
+    "business.business_operation",
+    "business.employer",
+    "organization.organization",
+    "spaceflight.rocket_engine_designer"
+  ],
+  "tv.video_host": [],
+  "location.jp_subprefecture": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "people.marriage": [
+    "people.person"
+  ],
+  "boats.hull_material": [],
+  "protected_sites.iucn_category": [],
+  "film.personal_film_appearance_type": [],
+  "opera.opera_production_staff_role": [
+    "theater.theater_production_staff_role",
+    "people.profession",
+    "film.film_job"
+  ],
+  "music.special_music_video_performance_type": [
+    "film.special_film_performance_type",
+    "tv.special_tv_performance_type"
+  ],
+  "location.hud_nmfa": [
+    "location.us_cbsa",
+    "location.location",
+    "location.hud_section_8_area"
+  ],
+  "location.kp_province": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "sports.sports_team_location",
+    "travel.travel_destination"
+  ],
+  "engineering.valvetrain_configuration": [],
+  "biology.plant_disease_conditions": [],
+  "cvg.computer_game_engine_family": [],
+  "geography.glacier_type": [],
+  "symbols.heraldic_variation_of_the_field": [],
+  "media_common.cause_of_loss": [],
+  "medicine.drug_formulation_category": [],
+  "physics.particle_family": [],
+  "conferences.conference_proceedings": [
+    "book.publication",
+    "book.written_work"
+  ],
+  "military.military_theater": [
+    "time.event",
+    "military.military_conflict",
+    "book.book_subject"
+  ],
+  "business.acquisition": [
+    "business.business_operation",
+    "business.employer",
+    "organization.organization"
+  ],
+  "aviation.airport_runway_surface": [],
+  "government.government_service_channel": [],
+  "boxing.boxing_sanctioning_body": [
+    "organization.organization"
+  ],
+  "astronomy.galactic_super_cluster": [
+    "astronomy.celestial_object"
+  ],
+  "kp_lw.philosophy_interest": [
+    "kp_lw.common.topic",
+    "book.book_subject",
+    "education.field_of_study",
+    "media_common.quotation_subject"
+  ],
+  "location.metropolitan_area_category": [],
+  "location.ru_krai": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "astronomy.planetographic_coordinate_system": [],
+  "astronomy.planet": [
+    "astronomy.orbital_relationship",
+    "book.book_subject",
+    "astronomy.celestial_object",
+    "astronomy.star_system_body",
+    "symbols.namesake"
+  ],
+  "automotive.model_year": [],
+  "cvg.gameplay_mode": [],
+  "music.tour_manager": [
+    "people.person"
+  ],
+  "medicine.transmission_route": [],
+  "business.product_with_ingredients": [],
+  "location.metropolitan_area": [
+    "location.statistical_region",
+    "location.location"
+  ],
+  "music.album_content_type": [],
+  "theater.theater_production_venue_relationship": [
+    "award.award_nominated_work",
+    "theater.theater_production",
+    "award.award_winning_work"
+  ],
+  "measurement_unit.speed_unit": [
+    "time_series.unit"
+  ],
+  "time.participant": [
+    "organization.organization",
+    "business.employer",
+    "government.political_party"
+  ],
+  "opera.opera_designer_role": [
+    "people.profession",
+    "theater.theater_production_staff_role",
+    "theater.theater_designer_role",
+    "film.film_job",
+    "book.book_subject"
+  ],
+  "sports.pro_sports_played": [
+    "people.measured_person",
+    "sports.pro_athlete",
+    "people.person"
+  ],
+  "time.defunct_time_zone": [
+    "time.time_zone"
+  ],
+  "computer.html_layout_engine": [],
+  "digicams.camera_sensor_manufacturer": [
+    "business.business_operation",
+    "business.consumer_company",
+    "business.employer",
+    "organization.organization",
+    "business.issuer",
+    "business.sponsor",
+    "award.award_winner",
+    "digicams.digital_camera_manufacturer",
+    "award.ranked_item"
+  ],
+  "astronomy.celestial_object_with_coordinate_system": [
+    "astronomy.orbital_relationship",
+    "book.book_subject",
+    "astronomy.celestial_object",
+    "astronomy.star_system_body",
+    "fictional_universe.fictional_setting"
+  ],
+  "biology.breed_registry": [
+    "organization.organization"
+  ],
+  "internet.localized_uri": [
+    "business.business_operation",
+    "business.employer",
+    "organization.organization"
+  ],
+  "architecture.civil_engineer": [
+    "architecture.engineer",
+    "people.person",
+    "people.deceased_person"
+  ],
+  "influence.peer_relationship": [
+    "people.person",
+    "influence.influence_node"
+  ],
+  "engineering.piston_engine": [
+    "projects.project_focus",
+    "engineering.engine"
+  ],
+  "broadcast.broadcast_station_class": [],
+  "religion.congregation": [
+    "religion.religious_organization",
+    "organization.organization"
+  ],
+  "wine.wine_type": [],
+  "rail.railway_type": [],
+  "food.cheese_milk_source": [
+    "biology.organism_classification",
+    "biology.animal",
+    "biology.domesticated_animal"
+  ],
+  "book.short_non_fiction_variety": [],
+  "location.in_union_territory": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "measurement_unit.angle_unit": [
+    "time_series.unit"
+  ],
+  "boats.ship_powerplant": [],
+  "symbols.heraldic_crest": [],
+  "spaceflight.rocket_engine_oxidizer": [
+    "spaceflight.rocket_fuel",
+    "chemistry.chemical_compound"
+  ],
+  "military.casualties_type": [],
+  "people.marriage_union_type": [],
+  "location.tr_region": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.location"
+  ],
+  "digicams.camera_viewfinder_type": [],
+  "award.award_nomination": [],
+  "business.company_brand_relationship": [
+    "business.employer"
+  ],
+  "tv.tv_producer_type": [
+    "film.film_job"
+  ],
+  "astronomy.galactic_cluster": [
+    "astronomy.celestial_object"
+  ],
+  "visual_art.art_acquisition_method": [],
+  "engineering.fuel_delivery_method": [
+    "automotive.fuel_delivery_method"
+  ],
+  "language.conlang_purpose": [],
+  "business.currency_sub_unit": [],
+  "language.language_regulator": [
+    "organization.organization"
+  ],
+  "engineering.battery_shape_format": [],
+  "measurement_unit.charge_unit": [
+    "time_series.unit"
+  ],
+  "spaceflight.rocket_engine_cycle": [],
+  "award.hall_of_fame_induction": [
+    "award.hall_of_fame_inductee",
+    "people.person"
+  ],
+  "location.vn_township": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.citytown",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "aviation.waypoint_type": [],
+  "law.legal_party_role": [],
+  "automotive.fuel": [],
+  "games.playing_card_deck_type": [],
+  "book.newspaper_edition_type": [],
+  "dataworld.subgraph": [],
+  "location.kp_metropolitan_city": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.citytown",
+    "location.administrative_division",
+    "location.location",
+    "sports.sports_team_location"
+  ],
+  "location.australian_state": [
+    "periodicals.newspaper_circulation_area",
+    "location.dated_location",
+    "location.statistical_region",
+    "government.political_district",
+    "organization.organization_scope",
+    "government.governmental_jurisdiction",
+    "location.administrative_division",
+    "location.location",
+    "film.film_location",
+    "travel.travel_destination"
+  ],
+  "location.uk_metropolitan_county": [
+    "location.dated_location",
+    "location.statistical_region",
+    "organization.organization_scope",
+    "location.administrative_division",
+    "location.location",
+    "location.uk_statistical_location",
+    "periodicals.newspaper_circulation_area"
+  ],
+  "american_football.scoreboard_quarter": [],
+  "education.fraternity_sorority_type": [],
+  "astronomy.galactic_shape": [],
+  "location.ru_autonomous_okrug": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "celebrities.friendship": [
+    "people.person",
+    "influence.influence_node"
+  ],
+  "location.australian_external_territory": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "symbols.flag_referent",
+    "book.book_subject"
+  ],
+  "amusement_parks.roller_coaster_train_configuration": [],
+  "measurement_unit.unit_of_force": [
+    "time_series.unit"
+  ],
+  "location.ru_federal_district": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "medicine.medical_trial_health_authority": [
+    "business.employer",
+    "organization.organization"
+  ],
+  "symbols.heraldry_granting_body": [],
+  "medicine.type_of_infectious_agent": [
+    "medicine.disease_cause"
+  ],
+  "transportation.road_orientation": [],
+  "location.cn_autonomous_region": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "measurement_unit.substance_unit": [
+    "time_series.unit"
+  ],
+  "internet.website_status": [],
+  "location.tw_direct_controlled_municipality": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.citytown",
+    "location.administrative_division",
+    "travel.travel_destination",
+    "location.location"
+  ],
+  "location.vn_centrally_controlled_municipality": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.citytown",
+    "location.administrative_division",
+    "location.location",
+    "travel.travel_destination"
+  ],
+  "tv.regular_tv_appearance": [
+    "people.person",
+    "tv.tv_actor",
+    "tv.tv_personality"
+  ],
+  "measurement_unit.amount_concentration_unit": [
+    "time_series.unit"
+  ],
+  "education.honorary_degree": [
+    "award.award_winner",
+    "people.person",
+    "education.honorary_degree_recipient"
+  ],
+  "sports.sports_award": [],
+  "organization.organization_merger": [
+    "business.business_operation",
+    "business.employer",
+    "organization.organization",
+    "internet.website_owner"
+  ],
+  "business.company_product_relationship": [
+    "organization.organization"
+  ],
+  "cricket.cricket_roster": [
+    "cricket.cricket_player",
+    "people.measured_person",
+    "sports.pro_athlete",
+    "cricket.cricket_bowler",
+    "people.person"
+  ],
+  "boats.boat_fate": [],
+  "architecture.tower_shape": [],
+  "dataworld.data_task_status": [],
+  "tv.tv_guest_personal_appearance": [
+    "music.artist",
+    "music.lyricist",
+    "music.composer",
+    "music.group_member",
+    "award.award_winner",
+    "award.award_nominee",
+    "people.person",
+    "music.featured_artist"
+  ],
+  "broadcast.am_terrestrial_broadcast_facility": [
+    "broadcast.distributor",
+    "broadcast.broadcast",
+    "broadcast.radio_station",
+    "location.location"
+  ],
+  "celebrities.romantic_relationship_type": [],
+  "time.commemorative_event": [
+    "time.event"
+  ],
+  "physics.fundamental_interaction": [],
+  "location.capital_category": [
+    "book.book_subject"
+  ],
+  "kp_lw.philosophy_era": [
+    "kp_lw.common.topic",
+    "book.book_subject"
+  ],
+  "music.track_contribution": [
+    "people.person"
+  ],
+  "chemistry.molecular_entity": [],
+  "biology.genome_build": [],
+  "architecture.structural_engineer": [
+    "architecture.engineer",
+    "people.person",
+    "projects.project_participant",
+    "award.award_winner"
+  ],
+  "distilled_spirits.infused_spirit_style": [
+    "food.food",
+    "food.ingredient",
+    "food.beverage"
+  ],
+  "astronomy.dwarf_planet": [
+    "astronomy.astronomical_discovery",
+    "astronomy.orbital_relationship",
+    "astronomy.celestial_object",
+    "astronomy.star_system_body",
+    "symbols.namesake",
+    "astronomy.plutoid"
+  ],
+  "astronomy.astronomical_discovery_status": [],
+  "rail.electric_system": [],
+  "medicine.vaccine_developer": [
+    "people.deceased_person",
+    "people.person",
+    "medicine.physician",
+    "influence.influence_node",
+    "education.academic",
+    "award.award_winner"
+  ],
+  "geography.glacier_terminus": [
+    "geography.geographical_feature_category"
+  ],
+  "engineering.engine_designer": [
+    "projects.project_participant",
+    "business.business_operation",
+    "business.employer",
+    "organization.organization"
+  ],
+  "cricket.cricket_bowling_pace": [],
+  "business.asset_ownership": [
+    "business.employer"
+  ],
+  "location.tw_provincial_city": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.citytown",
+    "location.administrative_division",
+    "location.location",
+    "travel.travel_destination"
+  ],
+  "fictional_universe.character_gender": [
+    "people.gender"
+  ],
+  "business.issue_type": [],
+  "tennis.tennis_match_type": [],
+  "astronomy.trans_neptunian_object": [
+    "symbols.namesake",
+    "astronomy.orbital_relationship",
+    "astronomy.celestial_object",
+    "astronomy.star_system_body",
+    "astronomy.astronomical_discovery"
+  ],
+  "film.film_cut": [],
+  "amusement_parks.disney_ride_ticket": [],
+  "event.event_promoter": [
+    "business.employer",
+    "organization.organization",
+    "business.business_operation",
+    "award.award_nominee"
+  ],
+  "skiing.run_rating_symbol": [],
+  "chemistry.solubility": [],
+  "astronomy.galactic_interaction_type": [],
+  "book.journal_publication": [],
+  "venture_capital.venture_investment": [
+    "business.business_operation",
+    "business.employer",
+    "organization.organization"
+  ],
+  "digicams.image_stabilization_type": [],
+  "visual_art.artwork_owner_relationship": [],
+  "spaceflight.rocket_status": [],
+  "law.international_patent_category": [],
+  "amusement_parks.roller_coaster_material": [],
+  "food.dietary_restriction": [
+    "food.diet"
+  ],
+  "chemistry.phase_of_matter": [],
+  "boats.nuclear_powerplant": [],
+  "digicams.camera_color_filter_array_type": [],
+  "chemistry.periodic_table_block": [],
+  "biology.plant_disease_documentation": [
+    "book.written_work"
+  ],
+  "award.award_honor": [],
+  "religion.religious_organization_leadership": [],
+  "skiing.run_rating": [],
+  "sports.sport_medal": [
+    "olympics.olympic_medal",
+    "olympics.olympic_medal_demonstration"
+  ],
+  "location.kp_county": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "travel.travel_destination"
+  ],
+  "cricket.cricket_match_type": [],
+  "cricket.cricket_series_event": [
+    "time.event",
+    "sports.sports_championship_event"
+  ],
+  "symbols.heraldic_helm": [],
+  "location.irish_province": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "sports.sports_team_location"
+  ],
+  "location.my_district": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "location.cn_municipality": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.citytown",
+    "location.administrative_division",
+    "travel.travel_destination",
+    "location.location",
+    "periodicals.newspaper_circulation_area"
+  ],
+  "medicine.medical_trial_phase": [],
+  "astronomy.comet_group": [],
+  "measurement_unit.luminance_unit": [
+    "time_series.unit"
+  ],
+  "meteorology.cloud_classification": [],
+  "medicine.hospital_ownership_status": [],
+  "law.constitutional_convention": [
+    "time.event"
+  ],
+  "location.es_place_of_sovereignty": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "dataworld.gardening_hint": [
+    "film.film",
+    "media_common.netflix_title"
+  ],
+  "royalty.chivalric_title_gender_equivalency": [
+    "royalty.chivalric_title"
+  ],
+  "kp_lw.philosophy_influencee": [
+    "kp_lw.common.topic"
+  ],
+  "business.competitive_space_mediator": [],
+  "digicams.camera_sensor_type": [],
+  "location.uk_constituent_country": [
+    "symbols.flag_referent",
+    "film.film_location",
+    "periodicals.newspaper_circulation_area",
+    "location.dated_location",
+    "location.statistical_region",
+    "fictional_universe.fictional_setting",
+    "location.country",
+    "book.book_subject",
+    "organization.organization_scope",
+    "government.governmental_jurisdiction",
+    "location.administrative_division",
+    "sports.sport_country",
+    "location.location"
+  ],
+  "measurement_unit.temperature_unit": [
+    "time_series.unit",
+    "symbols.namesake"
+  ],
+  "award.ranking": [],
+  "music.album_release_type": [],
+  "food.cheese_certification": [],
+  "atom.feed_category": [
+    "award.award_discipline",
+    "organization.organization_sector",
+    "book.book_subject",
+    "education.field_of_study",
+    "media_common.media_genre",
+    "media_common.literary_genre",
+    "media_common.quotation_subject",
+    "business.industry"
+  ],
+  "people.gender": [
+    "fictional_universe.character_gender"
+  ],
+  "astronomy.telescope_principle_type": [
+    "astronomy.telescope_type",
+    "law.invention"
+  ],
+  "measurement_unit.fuel_economy_unit": [
+    "time_series.unit"
+  ],
+  "boxing.boxing_title": [],
+  "astronomy.galactic_interaction_status": [],
+  "transportation.road_junction": [
+    "location.location"
+  ],
+  "royalty.coronation": [
+    "time.event"
+  ],
+  "astronomy.galactic_filament": [
+    "astronomy.celestial_object"
+  ],
+  "sports.handedness": [],
+  "cvg.cvg_platform_family": [
+    "business.consumer_product",
+    "business.product_line",
+    "computer.computer",
+    "cvg.cvg_platform"
+  ],
+  "travel.accommodation_price_range": [],
+  "geography.glacier_status": [],
+  "law.us_patent_type": [],
+  "dataworld.data_project_type": [],
+  "measurement_unit.specific_heat_capacity_unit": [
+    "time_series.unit"
+  ],
+  "location.cn_city_district": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "location.citytown",
+    "location.cn_county"
+  ],
+  "symbols.heraldic_compartment": [
+    "location.symbol_of_administrative_division"
+  ],
+  "automotive.trim_level": [],
+  "astronomy.meteorite_source": [
+    "spaceflight.mission_destination",
+    "astronomy.orbital_relationship",
+    "astronomy.celestial_object",
+    "astronomy.star_system_body",
+    "symbols.namesake",
+    "astronomy.celestial_object_with_coordinate_system",
+    "fictional_universe.fictional_setting",
+    "book.book_subject",
+    "visual_art.art_subject"
+  ],
+  "american_football.football_scoring_event": [],
+  "broadcast.tv_signal_type": [],
+  "food.beer_containment": [
+    "business.consumer_product"
+  ],
+  "protected_sites.natural_or_cultural_site_listing": [
+    "location.location",
+    "projects.project_focus",
+    "architecture.structure"
+  ],
+  "business.brand_slogan": [
+    "business.employer"
+  ],
+  "location.ca_territory": [
+    "location.dated_location",
+    "location.statistical_region",
+    "government.political_district",
+    "government.governmental_jurisdiction",
+    "location.administrative_division",
+    "location.location",
+    "book.book_subject"
+  ],
+  "comic_strips.comic_strip_creator_role": [],
+  "automotive.driveline": [],
+  "astronomy.plutoid": [
+    "astronomy.astronomical_discovery",
+    "astronomy.orbital_relationship",
+    "astronomy.dwarf_planet",
+    "astronomy.celestial_object",
+    "astronomy.star_system_body"
+  ],
+  "wine.fruit_source": [],
+  "location.jp_ward": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "sports.sports_gender": [
+    "biology.hybrid_parent_gender",
+    "fictional_universe.character_gender",
+    "people.gender",
+    "medicine.risk_factor"
+  ],
+  "olympics.olympic_medal": [
+    "sports.sport_medal",
+    "olympics.olympic_medal_demonstration"
+  ],
+  "dataworld.data_tool": [
+    "dataworld.software_tool"
+  ],
+  "aviation.airline_alliance": [],
+  "spaceflight.rocket_engine_status": [],
+  "event.speech_or_presentation": [],
+  "tv.tv_rating_system": [],
+  "celebrities.sexual_orientation": [],
+  "chess.chess_game_outcome": [],
+  "media_common.finished_work": [
+    "music.composition"
+  ],
+  "measurement_unit.current_unit": [
+    "symbols.namesake",
+    "time_series.unit"
+  ],
+  "location.uk_crown_dependency": [
+    "symbols.flag_referent",
+    "location.dated_location",
+    "location.statistical_region",
+    "location.country",
+    "book.book_subject",
+    "government.governmental_jurisdiction",
+    "location.administrative_division",
+    "location.location"
+  ],
+  "measurement_unit.acceleration_unit": [
+    "time_series.unit"
+  ],
+  "wine.wine_color": [
+    "food.food",
+    "food.ingredient"
+  ],
+  "broadcast.advisory": [],
+  "tennis.tennis_grip_style": [],
+  "measurement_unit.force_moment_unit": [
+    "time_series.unit"
+  ],
+  "measurement_unit.conductance_unit": [
+    "time_series.unit"
+  ],
+  "astronomy.near_earth_object_classification": [
+    "astronomy.celestial_object_category",
+    "book.book_subject"
+  ],
+  "amusement_parks.roller_coaster_propulsion_system": [],
+  "music.concert_performance_role": [],
+  "biology.gene_ontology_group_type": [],
+  "measurement_unit.dimensions": [],
+  "physics.subatomic_particle_generation": [],
+  "religion.place_of_worship_historical_use": [
+    "location.location"
+  ],
+  "olympics.olympic_medal_demonstration": [
+    "sports.sport_medal",
+    "olympics.olympic_medal"
+  ],
+  "tv.tv_guest_role": [
+    "influence.influence_node",
+    "film.film_story_contributor",
+    "people.person"
+  ],
+  "measurement_unit.inverse_temperature_unit": [
+    "time_series.unit"
+  ],
+  "location.my_federal_territory": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "travel.travel_destination",
+    "location.location",
+    "location.citytown",
+    "government.governmental_jurisdiction"
+  ],
+  "astronomy.trans_neptunian_region": [],
+  "location.australian_territory": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location",
+    "periodicals.newspaper_circulation_area",
+    "government.political_district",
+    "government.governmental_jurisdiction"
+  ],
+  "cricket.cricket_umpire_panel": [
+    "organization.organization"
+  ],
+  "boats.hull_configuration": [
+    "boats.ship_class",
+    "boats.ship_type"
+  ],
+  "military.military_combatant_group": [],
+  "engineering.location_with_mains_power": [
+    "symbols.flag_referent",
+    "periodicals.newspaper_circulation_area",
+    "olympics.olympic_participating_country",
+    "location.dated_location",
+    "location.statistical_region",
+    "location.country",
+    "book.book_subject",
+    "organization.organization_scope",
+    "government.governmental_jurisdiction",
+    "location.administrative_division",
+    "location.location",
+    "organization.organization_member"
+  ],
+  "biology.hybrid_parent_gender": [
+    "fictional_universe.character_gender",
+    "sports.sports_gender",
+    "people.gender",
+    "medicine.risk_factor"
+  ],
+  "games.playing_card_game_play_direction": [],
+  "measurement_unit.radioactivity_unit": [
+    "time_series.unit"
+  ],
+  "tv.video_type": [],
+  "location.mx_federal_district_borough": [
+    "location.dated_location",
+    "location.statistical_region",
+    "location.administrative_division",
+    "location.location"
+  ]
+}

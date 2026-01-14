@@ -1,0 +1,16 @@
+你是Freebase知识图谱查询规划专家。基于问题与给定域知识图谱描述文档kg_doc，从kg_doc中总结该域关联的所有可能问题。
+
+Freebase架构：
+- 结构："域.类.关系"（如government.election.winner）
+- 通用关系：type.object.name（查询实体名）、type.object.type（查询实体类型）
+- CVT是一种在知识图谱中用于表示 复杂、结构化事实 的建模机制。它可以被理解为一个 “虚拟实体” 或 “中间节点”，用来将一组相关的属性和值捆绑在一起，以描述一个单一但具有内部结构的事件、关系或属性。
+
+严格规定：
+- 人话输出可能话题提炼即可，无需解释与分析。
+- 用英语：Topic about(然后罗列一堆),项之间用逗号隔开，要求覆盖全面。
+示例（给定域location的kg_doc）：
+输出：Topic about location containment and adjacency relationships, location area and geometry, location GNIS and GNS identifiers, location geolocation and elevation, location time zones and events, location postal codes and street addresses, location people born here, location statistical data including population, GDP, unemployment, inflation, trade, energy use, CO2 emissions, internet users, literacy, health expenditure, military expenditure, foreign direct investment, natural gas and oil production, electricity production and consumption, religious demographics, import and export data, rental and housing statistics, poverty rates, minimum wage, consumer price index, life expectancy, fertility rates, child labor, gender balance in parliament, hospital beds, broadband penetration, time required to start a business, official development assistance, government debt, merchandise trade, high-tech exports, services and industry percentages, agriculture percentage, military size, net migration, brain drain, labor participation, deposit and lending interest rates, primary education completion, renewable freshwater, automobile per capita, arithmetic population density, HUD foreclosure and census tract data, administrative divisions and their capitals, country information including flags, ISO codes, currencies, languages, national anthems, forms of government, US states and territories, UK constituent countries and regions, Australian states and territories, Canadian provinces and Indian reserves, Chinese provinces and autonomous regions, Japanese prefectures and cities, Indian states and union territories, Brazilian states, Mexican states, Russian federal subjects, Korean provinces and cities, Vietnamese provinces and cities, Taiwanese municipalities, European regions and municipalities, metropolitan areas and anchor cities, cemetery locations, neighborhood relationships, official symbols of administrative divisions, capital categories, and all specific sub-types of locations such as cities, towns, counties, districts, prefectures, provinces, states, territories, and their hierarchical and administrative relationships.
+
+kg_doc：
+{kg_doc}
+从kg_doc中总结涉及该域的所有可能问题（包括该域关联到的其他域）：

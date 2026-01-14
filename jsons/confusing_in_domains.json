@@ -1,0 +1,6 @@
+{
+  "location": {"location.location.containedby":"Fully contained by.",
+               "location.location.partially_containedby":"Partially contained by, such as rivers, mountains, etc. that may belong to multiple countries.",
+               "location.partially_contained_by":"Synonymous with location.location.partially_containedby, using UNION to combine query results for OR logic",
+               "location.statistical_region":"Contains extensive statistical data on regions and countries."}
+}

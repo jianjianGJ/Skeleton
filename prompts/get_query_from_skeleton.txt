@@ -1,0 +1,175 @@
+你是Freebase知识图谱的SPARQL查询专家，能够直接基于问题与相关关系skeleton生成可执行的高效查询指令，不需要解释与分析。
+
+Freebase架构规范：
+- 条目结构：`域.类.关系`（例：`government.election.winner`）
+- 核心谓词：`type.object.name`、`type.object.type`（实体类型）
+- CVT是一种在知识图谱中用于表示 复杂、结构化事实 的建模机制。它可以被理解为一个 “虚拟实体” 或 “中间节点”，用来将一组相关的属性和值捆绑在一起，以描述一个单一但具有内部结构的事件、关系或属性。
+
+SPARQL转换规范：
+- 前缀：`PREFIX fb: <http://rdf.freebase.com/ns/>`(注意尖括号<>不可省略)
+- 关系转换：`域.类.关系` → `fb:域.类.关系`
+- 名称谓词：`fb:type.object.name`（字符串需加`@en`语言标签）
+- 类型谓词：`fb:type.object.type`
+
+示例1：
+问题：Who was the governor of Arizona in 2009 that held his governmental position before 1998？
+回答该问题的检索方案skeleton：
+government.government_office_or_title[break1]-->type.object.name→'Governor of Arizona'[answer related].
+government.government_office_or_title[break1]-->government.government_office_or_title.office_holders-->government.government_position_held[break1 CVT]
+government.government_position_held[break1 CVT]→government.government_position_held.office_holder→people.person[break2].
+people.person[break2]→type.object.name→literal[answer related].
+government.government_position_held[break1 CVT]→government.government_position_held.from→literal[answer related].
+government.government_position_held[break1 CVT]→government.government_position_held.to→literal[answer related].
+生成SPARQL：
+PREFIX fb: <http://rdf.freebase.com/ns/>
+SELECT DISTINCT ?personName ?from ?to WHERE {{
+?officeTitle fb:type.object.name "Governor of Arizona"@en .
+?officeTitle fb:government.government_office_or_title.office_holders ?position .
+?position fb:government.government_position_held.office_holder ?person .
+?person fb:type.object.name ?personName .
+OPTIONAL {{ ?position fb:government.government_position_held.from ?from}}
+OPTIONAL {{ ?position fb:government.government_position_held.to ?to}}
+}}
+
+示例2（OPTIONAL保留关键过程变量的name，除了CVT）：
+问题：Where did the "Country Nation World Tour" concert artist go to college?
+回答该问题的检索方案skeleton：
+music.concert_tour[break1]-->type.object.name-->'Country Nation World Tour'[answer related].
+music.concert_tour[break1]-->music.concert_tour.artist-->music.artist[break2]
+music.artist[break2 use father type people.person]-->people.person.education-->education.education[break2 CVT]
+education.education[break2 CVT]-->education.education.institution-->business.employer[break3].
+business.employer[break3]-->type.object.name-->literal[answer related].
+生成SPARQL：
+PREFIX fb: <http://rdf.freebase.com/ns/>
+SELECT DISTINCT ?artistName ?institutionName WHERE {{
+?concertTour fb:type.object.name "Country Nation World Tour"@en .
+?concertTour fb:music.concert_tour.artist ?artist .
+?artist fb:people.person.education ?education .
+OPTIONAL {{ ?artist fb:type.object.name ?artistName . }}
+?education fb:education.education.institution ?institution .
+OPTIONAL {{ ?institution fb:type.object.name ?institutionName . }}
+}}
+
+示例3（双线索）：
+问题：What country bordering France contains an airport that serves Nijmegen?
+回答该问题的检索方案skeleton：
+location.country[break1]-->type.object.name-->'France'[answer related].#线索1
+location.country[break1 use father type location.location]-->location.location.adjoin_s-->location.adjoining_relationship[break1 CVT].#线索1
+location.adjoining_relationship[break1 CVT]-->location.adjoining_relationship.adjoins-->location.location[break2].#线索1
+aviation.airport[break3]-->aviation.airport.serves-->location.location[break4].#线索2
+location.location[break4]-->type.object.name-->'Nijmegen'[answer related]#线索2
+location.location[break3]-->location.location.containedby-->location.location[break2].#线索1与线索2交汇
+location.location[break2]-->type.object.name-->literal[answer related].
+aviation.airport[break3]-->type.object.name-->literal[answer related].
+生成SPARQL：
+PREFIX fb: <http://rdf.freebase.com/ns/>
+SELECT DISTINCT ?countryName ?airportName WHERE {{
+?france fb:type.object.name "France"@en .
+?france fb:location.location.adjoin_s ?adjoiningRel .
+?adjoiningRel fb:location.adjoining_relationship.adjoins ?countryLocation .
+OPTIONAL {{ ?countryLocation fb:type.object.name ?countryName . }}
+?airport fb:aviation.airport.serves ?nijmegenLocation .
+?nijmegenLocation fb:type.object.name "Nijmegen"@en .
+?airport fb:location.location.containedby ?countryLocation .
+OPTIONAL {{ ?airport fb:type.object.name ?airportName . }}
+}}
+
+示例4（地区统计信息示例，location.statistical_region包含国家、区域的统计信息）：
+问题：The national anthem Afghan National Anthem is from the country which practices what religions?
+回答该问题的相关检索方案skeleton：
+government.national_anthem[break1]-->type.object.name-->'Afghan National Anthem'[answer related].
+government.national_anthem[break1]-->government.national_anthem.national_anthem_of-->government.national_anthem_of_a_country[break1 CVT]
+government.national_anthem_of_a_country[break1 CVT]-->government.national_anthem_of_a_country.country-->location.country[break2].
+location.country[break2 use father type location.statistical_region]-->location.statistical_region.religions-->location.religion_percentage[break2 CVT].
+location.religion_percentage[break2 CVT]-->location.religion_percentage.religion-->religion.religion[break3].
+religion.religion[break3]-->type.object.name-->literal[answer related].
+生成SPARQL：
+PREFIX fb: <http://rdf.freebase.com/ns/>
+SELECT DISTINCT ?religionName WHERE {{
+?anthem fb:type.object.name "Afghan National Anthem"@en .
+?anthem fb:government.national_anthem.national_anthem_of ?anthemOfCountry .
+?anthemOfCountry fb:government.national_anthem_of_a_country.country ?country .
+?country fb:location.statistical_region.religions ?religionPercentage .
+?religionPercentage fb:location.religion_percentage.religion ?religion .
+OPTIONAL {{ ?religion fb:type.object.name ?religionName . }}
+}}
+
+示例5（关键深度后续潜在检索示例）：
+问题：'What Portuguese speaking country imported form Brazil?'
+回答该问题的相关检索方案skeleton：
+language.human_language[break1]-->type.object.name-->'Portuguese Language'[answer related].
+language.human_language[break1]-->language.human_language.countries_spoken_in-->location.country[break2].
+location.country[break3]-->type.object.name-->'Brazil'[answer related].
+location.country[break3 use father type location.statistical_region]-->location.statistical_region.places_imported_from-->location.imports_and_exports[break3 CVT].
+location.imports_and_exports[break3 CVT]-->location.imports_and_exports.imported_from-->location.dated_location[break4].
+location.dated_location[break4]-->type.object.name-->literal[answer related][depth].
+location.dated_location[break4 use father type location.location]-->location.location.containedby-->location.location[break5][optional].
+location.location[break5]-->type.object.name-->literal[answer related][optional].
+生成SPARQL：
+PREFIX fb: <http://rdf.freebase.com/ns/>
+SELECT DISTINCT ?locationName ?countryName WHERE {{
+  ?portugueseLang fb:type.object.name "Portuguese Language"@en .
+  ?portugueseLang fb:language.human_language.countries_spoken_in ?country .
+  ?brazil fb:type.object.name "Brazil"@en .
+  ?brazil fb:location.statistical_region.places_imported_from ?importsExports .
+  ?importsExports fb:location.imports_and_exports.imported_from ?datedLocation .
+  OPTIONAL {{?datedLocation fb:type.object.name ?locationName . }} #已到达关键深度，保留关键中间变量名称，后续查询有过度过滤的风险，使用嵌套OPTIONAL指令
+  OPTIONAL {{
+   ?datedLocation fb:location.location.containedby ?country .
+   OPTIONAL {{ ?country fb:type.object.name ?countryName . }}
+      }}
+}}
+
+示例6（UNION合并并列关系）
+问题：What country does Turkey trade with that contains the Annaba Province?
+回答该问题的相关检索方案skeleton：
+location.statistical_region[break1]-->type.object.name-->'Turkey'[answer related].
+{{
+location.statistical_region[break1]-->location.statistical_region.places_imported_from-->location.imports_and_exports[break1 CVT].
+location.imports_and_exports[break1 CVT]-->location.imports_and_exports.imported_from-->location.dated_location[break3].
+}}
+UNION  #places_exported_to与places_imported_from两个关系都与贸易相关，使用UNION综合检索结果
+{{
+location.statistical_region[break1]-->location.statistical_region.places_exported_to-->location.imports_and_exports[break1 CVT].
+location.imports_and_exports[break1 CVT]-->location.imports_and_exports.exported_to-->location.dated_location[break3].
+}}
+location.dated_location[break3]-->type.object.name-->literal[answer related].
+location.administrative_division[break2]-->type.object.name-->'Annaba Province'[answer related].
+location.administrative_division[break2]-->location.administrative_division.country-->location.country[break4].
+location.country[break4]-->type.object.name-->literal[answer related][depth].
+生成SPARQL：
+PREFIX fb: <http://rdf.freebase.com/ns/>
+SELECT DISTINCT ?locationName ?countryName WHERE {{
+   ?turkey fb:type.object.name "Turkey"@en .
+   {{?turkey fb:location.statistical_region.places_exported_to ?importsExports .
+   ?importsExports fb:location.imports_and_exports.exported_to ?datedLocation .}}
+   UNION #places_exported_to与places_imported_from两个关系都与贸易相关，使用UNION综合检索结果
+   {{?turkey fb:location.statistical_region.places_imported_from ?importsExports .
+   ?importsExports fb:location.imports_and_exports.imported_from ?datedLocation .}}
+  ?annabaProvince fb:type.object.name "Annaba Province"@en .
+  ?annabaProvince fb:location.administrative_division.country ?datedLocation .
+  OPTIONAL{{?datedLocation fb:type.object.name ?locationName .}}#已到达关键检索深度
+}}
+----示例结束----
+当前任务：
+问题：{question}
+
+回答该问题的相关检索方案skeleton：
+{skeleton}
+
+核心生成规则：
+1. 严格引用：必须仅使用相关关系中原始条目，禁止虚构任何类或关系
+2. 名称保留：所有参与检索的关键变量必须在SELECT中保留其名称（使用`OPTIONAL`避免过滤未命名实体）
+3. 因为精确字符匹配非常容易导致无匹配，而我们并不知道知识图谱中存储的某字符，所以除给定问题的topic entity的name外，其余非数字字符串不做匹配。比如“What actor played the a kid in the movie with a character named Jenny's Father?”问题不使用指令“?performance2 fb:film.performance.character_note "a kid"@en ”而是使用指令“?performance2 fb:film.performance.character_note ?note”。再比如“When was the last time a team led by Larr Baer win the World Series?(Critical topic entity name : Larry Baer)”不匹配‘World Series’，因为World Series不是数字字符，也不是topic entity.
+4. SELECT记录所有literal变量,以及检索过程中涉及的关键过程变量（使用`OPTIONAL`避免过滤未命名实体）
+5 数值精确匹配指令使用双引号的字符匹配（如 rate is 1.8），示例：FILTER (?object ?object.relation.rate "1.8") 
+6 除日期外，数值匹配禁止使用xsd指令。
+7.1 日期过滤指令示例(单边界范围，如Who was the US President during WW2 that held his government position from 3-4-1933?)：FILTER (xsd:date(?from) >= "1933-03-04"^^xsd:date).
+7.2 日期过滤指令示例(双边界范围)：FILTER (xsd:date(?date) >= "2020-01-01"^^xsd:date && xsd:date(?date) <= "2023-12-31"^^xsd:date)；
+7.3 日期格式统一：将问题中的日期统一为year-month-day，month和day都是两位数，比如"3-4-1933"转变为"1933-3-4"
+8. 使用DISTINCT去重
+9. 有限深度检索原则，到达由[depth]标注的关键检索深度后，为避免后续更深入的潜在查询(由[optional]标注)过滤掉关键信息，达到一定检索深度后，采用嵌套OPTIONAL指令。
+10. 排序使用指令ORDER BY DESC(?somethin)
+11. 日期过滤采取保守策略，避免过度过滤，比如获得两个时间变量?from ?to,当问题询问before X时，使用?from < X进行过滤，当问题询问after X时，使用?to > X进行过滤，
+
+生成SPARQL：

@@ -1,0 +1,235 @@
+你是Freebase知识图谱查询规划专家。基于问题与相关域知识图谱描述文档kg_doc，输出kg_doc中回答该问题的相关检索方案skeleton。
+
+Freebase架构：
+- 结构："域.类.关系"（如government.election.winner）
+- 通用关系：type.object.name（查询实体名）、type.object.type（查询实体类型）
+- CVT是一种在知识图谱中用于表示 复杂、结构化事实 的建模机制。它可以被理解为一个 “虚拟实体” 或 “中间节点”，用来将一组相关的属性和值捆绑在一起，以描述一个单一但具有内部结构的事件、关系或属性。
+
+路径语法：
+- 格式：`类型→关系→指向类型`，。
+- 备注标记：[break]，核心突破口，问题中明确提及的实体名称或属性值，[break CVT]，[use father type**]用于标注该类型使用其父类型的关系，比如music.artist 可以use father peroson.people,[answer related]标注和问题相关的literal结果,[depth]标注针对问题检索的关键深度，后续检索为可能的潜在需要检索[optional]标注。
+- 需要特别注意Type的衔接（包括使用use father）
+- UNION指令，部分情况下关系的命名含义非常接近或并列，此时使用UNION指令实现“或”逻辑的功能，避免关系误用，漏用。结构：{{局部方案1}}UNION{{局部方案2}}.
+
+
+示例1（CVT使用）:
+kg_doc：
+Type <government.government_office_or_title> has relations:
+     1：government.government_office_or_title.governmental_body_if_any-->government.governmental_body; head examples...
+     2：government.government_office_or_title.category-->government.government_office_category; head examples...
+     3：government.government_office_or_title.jurisdiction-->location.location; head examples...
+     4：government.government_office_or_title.office_holders-->government.government_position_held(CVT infomations:government.government_position_held.basic_title-->government.government_office_category, government.government_position_held.office_holder-->people.person, government.government_position_held.appointed_by-->government.political_appointer, government.government_position_held.from-->literal, government.government_position_held.jurisdiction_of_office-->location.dated_location, government.government_position_held.district_represented-->government.political_district, government.government_position_held.office_position_or_title-->government.government_office_or_title, government.government_position_held.governmental_body-->government.governmental_body, government.government_position_held.to-->literal, government.government_position_held.legislative_sessions-->government.legislative_session).
+Topoc entity Governor of Arizona has positive relations:...,government.government_office_or_title.office_holders,...
+Topoc entity Governor of Arizona has negative relations:...,
+问题：Who was the governor of Arizona in 2009 that held his governmental position before 1998？
+回答该问题的检索方案skeleton：
+government.government_office_or_title[break1]-->type.object.name→'Governor of Arizona'[answer related].
+government.government_office_or_title[break1]-->government.government_office_or_title.office_holders-->government.government_position_held[break1 CVT]#break1 must use the relation from Topoc entity(此处使用Governor of Arizona的positive relations in kg_doc)
+government.government_position_held[break1 CVT]→government.government_position_held.office_holder→people.person[break2].
+people.person[break2]→type.object.name→literal[answer related].
+government.government_position_held[break1 CVT]→government.government_position_held.from→literal[answer related].
+government.government_position_held[break1 CVT]→government.government_position_held.to→literal[answer related][depth].
+
+示例2（父类关系使用）：
+kg_doc：
+Type <music.concert_tour> has relations:
+    ...
+    5：music.concert_tour.artist-->music.artist; head examples...
+    ...;
+Type <music.concert_tour> has father Types: <people.person>.
+Type <music.concert_tour> has relations：
+    ...
+Type <people.person> has relations:
+    ...
+    7：people.person.education-->education.education(CVT infomations:education.education.student-->people.person, education.education.minor-->education.field_of_study, education.education.specialization-->education.field_of_study, education.education.end_date-->literal,education.education.major_field_of_study-->education.field_of_study, education.education.start_date-->literal, education.education.institution-->business.employer, education.education.degree-->education.school_category); head examples...
+    ...
+Topoc entity Country Nation World Tour has positive relations:...,music.concert_tour.artist,...
+Topoc entity Country Nation World Tour has negative relations:...,
+问题：Where did the "Country Nation World Tour" concert artist go to college?
+回答该问题的相关检索方案skeleton：
+music.concert_tour[break1]-->type.object.name-->'Country Nation World Tour'[answer related].
+music.concert_tour[break1]-->music.concert_tour.artist-->music.artist[break2] ##break1 must use the relation from Topoc entity(此处使用Country Nation World Tour的positive relations in kg_doc)
+music.artist[break2 use father type people.person]-->people.person.education-->education.education[break2 CVT]
+education.education[break2 CVT]-->education.education.institution-->business.employer[break3].
+business.employer[break3]-->type.object.name-->literal[answer related][depth].
+
+示例3(双线索)：
+kg_doc：
+Type <location.location> has relations:
+    ...
+    3：location.location.adjoin_s-->location.adjoining_relationship(CVT infomations:location.adjoining_relationship.adjoins-->location.location); head examples...
+    4：location.location.unlocode-->literal; head examples...
+Type <aviation.airport> has father Types: <location.location>.
+Type <aviation.airport> has relations:
+   ...
+   4：aviation.airport.serves-->location.location，head examples....
+Topoc entity France has positive relations:...,location.location.adjoin_s,...
+Topoc entity France has negative relations:...,
+Topoc entity Nijmegen has positive relations:...
+Topoc entity Nijmegen has negative relations:...
+问题：What country bordering France contains an airport that serves Nijmegen?
+回答该问题的相关检索方案skeleton：
+location.country[break1]-->type.object.name-->'France'[answer related].#线索1
+location.country[break1 use father type location.location]-->location.location.adjoin_s-->location.adjoining_relationship[break1 CVT].#线索1 ##break1 must use the relation from Topoc entity(此处使用France的positive relations in kg_doc)
+location.adjoining_relationship[break1 CVT]-->location.adjoining_relationship.adjoins-->location.location[break2].#线索1
+aviation.airport[break3]-->aviation.airport.serves-->location.location[break4].#线索2
+location.location[break4]-->type.object.name-->'Nijmegen'[answer related]#线索2
+location.location[break3]-->location.location.containedby-->location.location[break2].#线索1与线索2交汇 
+location.location[break2]-->type.object.name-->literal[answer related].
+aviation.airport[break3]-->type.object.name-->literal[answer related][depth].
+
+示例4（地区统计信息示例，location.statistical_region包含国家、区域的统计信息）：
+kg_doc：
+Type <religion.adherents> has relations:
+ 1：religion.adherents.religion-->religion.religion; head examples...
+ ...
+Topoc entity Afghan National Anthem has positive relations:...,government.national_anthem.national_anthem_of,...
+Topoc entity Afghan National Anthem  has negative relations:...
+问题：The national anthem Afghan National Anthem is from the country which practices what religions?
+回答该问题的相关检索方案skeleton：
+government.national_anthem[break1]-->type.object.name-->'Afghan National Anthem'[answer related].
+government.national_anthem[break1]-->government.national_anthem.national_anthem_of-->government.national_anthem_of_a_country[break1 CVT]##break1 must use the relation from Topoc entity(此处使用Afghan National Anthem的positive relations in kg_doc)
+government.national_anthem_of_a_country[break1 CVT]-->government.national_anthem_of_a_country.country-->location.country[break2].
+location.country[break2 use father type location.statistical_region]-->location.statistical_region.religions-->location.religion_percentage[break2 CVT].
+location.religion_percentage[break2 CVT]-->location.religion_percentage.religion-->religion.religion[break3].
+religion.religion[break3]-->type.object.name-->literal[answer related][depth].
+
+示例5（UNION处理可能并列的关系）：
+kg_doc:
+...
+  1:location.statistical_region.places_imported_from...
+  2:location.statistical_region.places_exported_to...
+  ...
+问题：What country does Turkey trade with that contains the Annaba Province?
+回答该问题的相关检索方案skeleton：
+location.statistical_region[break1]-->type.object.name-->'Turkey'[answer related].
+{{
+location.statistical_region[break1]-->location.statistical_region.places_imported_from-->location.imports_and_exports[break1 CVT].
+location.imports_and_exports[break1 CVT]-->location.imports_and_exports.imported_from-->location.dated_location[break3].
+}}
+UNION  #places_exported_to与places_imported_from两个关系都与贸易相关，使用UNION综合检索结果
+{{
+location.statistical_region[break1]-->location.statistical_region.places_exported_to-->location.imports_and_exports[break1 CVT].
+location.imports_and_exports[break1 CVT]-->location.imports_and_exports.exported_to-->location.dated_location[break3].
+}}
+location.dated_location[break3]-->type.object.name-->literal[answer related].
+location.administrative_division[break2]-->type.object.name-->'Annaba Province'[answer related].
+location.administrative_division[break2]-->location.administrative_division.country-->location.country[break4].
+location.country[break4]-->type.object.name-->literal[answer related][depth].
+
+示例6（关键深度后续潜在检索）：
+kg_doc:
+...
+问题：What Portuguese speaking country imported form Brazil?
+回答该问题的相关检索方案skeleton：
+language.human_language[break1]-->type.object.name-->'Portuguese Language'[answer related].
+language.human_language[break1]-->language.human_language.countries_spoken_in-->location.country[break2].
+location.country[break3]-->type.object.name-->'Brazil'[answer related].
+location.country[break3 use father type location.statistical_region]-->location.statistical_region.places_imported_from-->location.imports_and_exports[break3 CVT].
+location.imports_and_exports[break3 CVT]-->location.imports_and_exports.imported_from-->location.dated_location[break4].
+location.dated_location[break4]-->type.object.name-->literal[answer related][depth].#到达关键深度，后续检索为可能的潜在需要检索的信息。
+location.dated_location[break4 use father type location.location]-->location.location.containedby-->location.location[break5][optional].
+location.location[break5]-->type.object.name-->literal[answer related][optional].
+
+示例7（简短高效原则：谨慎使用location概念的范围扩大，除非问题中明确提及，否则禁止使用location.location.containedby）
+kg_doc:
+...
+问题What languiages are spoken by residents of the Central Western Time Zone?
+回答该问题的相关检索方案skeleton：
+time.time_zone[break1]-->type.object.name-->'Central Western Time Zone'[answer related].
+time.time_zone[break1]-->time.time_zone.locations_in_this_time_zone-->location.location[break2].#此处不使用location.location.containedby扩大概念范围
+location.location[break2]-->type.object.type-->'location.country'[answer related]. 
+location.country[break2]-->location.country.languages_spoken-->language.human_language[break3].
+language.human_language[break4]-->type.object.name-->literal[answer related][depth].
+
+示例8（模糊概念的UNION合并，避免关系误用）
+kg_doc:
+...
+问题What location appointed Dennis Daugaard to governmental position and is bisected by the Missouri River?(Topic entity name : Dennis Daugaard,Missouri River)
+回答该问题的相关检索方案skeleton：
+government.politician[break1]-->type.object.name-->'Dennis Daugaard'[answer related].
+government.politician[break1]-->government.politician.government_positions_held-->government.government_position_held[break1 CVT].
+government.government_position_held[break1 CVT]-->government.government_position_held.jurisdiction_of_office-->location.dated_location[break2].
+{{geography.river[break3]-->location.location.contains-->location.location[break2 use father type location.location].}}
+UNION
+{{geography.river[break3]-->location.location.partially_contained_by-->location.location[break2 use father type location.location].}}
+UNION
+{{geography.river[break3]-->location.location.partially_containedby-->location.location[break2 use father type location.location].}}
+geography.river[break3]-->type.object.name-->'Missouri River'[answer related][depth].
+
+示例9（指向类型的紧密衔接）
+kg_doc:
+...
+organization.organization.parent-->organization.organization_relationship #必须使用kg_doc指定的类型衔接
+...
+问题What are the school colors of Harvard Art Museum?(Topic entity name : Harvard Art Museums)
+回答该问题的相关检索方案skeleton：
+organization.organization[break1]-->type.object.name-->'Harvard Art Museums'[answer related].
+organization.organization[break1]-->organization.organization.parent-->organization.organization_relationship[break1 CVT]#错误衔接organization.organization[break1]-->organization.organization.parent-->organization.organization[break2].
+organization.organization_relationship[break1 CVT]-->organization.organization_relationship.parent-->organization.organization[break2].
+organization.organization[break2]-->type.object.type-->'education.university'[answer related].
+education.university[break2 use father type education.educational_institution]-->education.educational_institution.colors-->visual_art.color[break3].
+visual_art.color[break3]-->type.object.name-->literal[answer related][depth].
+
+示例10（指向类型的紧密衔接）
+kg_doc:
+...
+business.board_member.leader_of-->organization.leadership #必须使用kg_doc指定的类型衔接
+...
+问题What is the mascot of the organization with the person named Eric F. Spina?(Topic entity name: Eric F. Spina)
+回答该问题的相关检索方案skeleton：
+business.board_member[break1]-->type.object.name-->'Eric F. Spina'[answer related].
+business.board_member[break1]-->business.board_member.leader_of-->organization.leadership[break1 CVT].#错误衔接education.educational_institution[break2]
+organization.leadership[break1 CVT]-->organization.leadership.organization-->education.educational_institution[break2]
+education.educational_institution[break2]-->education.educational_institution.mascot-->education.school_mascot[break3].
+education.school_mascot[break3]-->type.object.name-->literal[answer related][depth].
+
+
+示例10（禁止匹配不在topic entity里的实体的type.object.name）
+kg_doc:
+...
+...
+问题：What film with character Luke Castelland does Logan Lerman play in?(Topic entity name: Logan Lerman)
+回答该问题的相关检索方案skeleton：
+film.actor[break1]-->type.object.name-->'Logan Lerman'[answer related].
+film.actor[break1]-->film.actor.film-->film.performance[break1 CVT].
+film.performance[break1 CVT]-->film.performance.character-->fictional_universe.fictional_character[break2].
+#错误检索步骤fictional_universe.fictional_character[break2]-->type.object.name-->'Luke Castelland'[answer related].（Luke Castelland不在Topic entity name里，禁止匹配）
+fictional_universe.fictional_character[break2]-->type.object.name-->literal[answer related].  #正确检索步骤.
+film.performance[break1 CVT]-->film.performance.film-->film.film[break3].
+film.film[break3]-->type.object.name-->literal[answer related][depth].
+
+示例11（使用type.object.type限定问题答案类型明确的类型）
+kg_doc:
+...
+...
+问题：What film with character Luke Castelland does Logan Lerman play in?(Topic entity name: Logan Lerman)
+回答该问题的相关检索方案skeleton：
+film.actor[break1]-->type.object.name-->'Logan Lerman'[answer related].
+film.actor[break1]-->film.actor.film-->film.performance[break1 CVT].
+film.performance[break1 CVT]-->film.performance.character-->fictional_universe.fictional_character[break2].
+#错误检索步骤fictional_universe.fictional_character[break2]-->type.object.name-->'Luke Castelland'[answer related].（Luke Castelland不在Topic entity name里，禁止匹配）
+fictional_universe.fictional_character[break2]-->type.object.name-->literal[answer related].  #正确检索步骤.
+film.performance[break1 CVT]-->film.performance.film-->film.film[break3].
+film.film[break3]-->type.object.name-->literal[answer related][depth].
+----示例结束----
+kg_doc：
+{kg_doc}
+
+问题：{question}
+
+严格规定：
+- 必须使用相关域kg_doc中的原始关系，禁止杜撰条目，请检查确保不要使用未提供的关系。
+- 仅输出相关关系，每行以句号"."结束，无需解释与分析。
+- CVT类型不可作为独立突破口[break]，仅能是[break CVT]。
+- 原问题中的部分名称可能会笔误或缺失，使用Topic entity name 提供的名称。
+- 题目中的突破口必须使用topic entity限定的关系。topic entity拥有的relations在当突破口作为主语查询其特征时使用，指向topic entity的关系指当突破口作为谓语查询查询其主语时使用；
+- 使用第一个突破口的关系方向需自行判断，原则上关系数量的不对称性，比如一个人会有国籍这个关系，但是一个国家不会有人民这个关系指向所有人。国家是突破口查询人时应当使用国家的negative relations，因为国家作为人的国籍这个关系的谓语，人是突破口查询其国家时应当使用人的positive relations，因为人是人的国籍这个关系的谓语
+- 禁止匹配不在topic entity里的实体的type.object.name，比如“When was the last time a team led by Larr Baer win the World Series?(Topic entity name : Larry Baer)”不匹配‘World Series’，因为World Series不是数字字符，也不是topic entity.
+- 禁止匹配不在topic entity里的字符（包括数字、日期等），直接用literal表征即可。
+- 遵循简短高效原则。
+- 注意关系指向类型的衔接，禁止关系的指向类型错误，即禁止将关系指向与kg_doc提供的关系指向类型不一致的类型。
+- 如询问的是当下现状时，不要使用dated_**项，当询问某数据时，可以使用dated_**项。
+- 使用type.object.type限定问题答案类型明确的类型
+
+回答该问题的相关检索方案skeleton：
